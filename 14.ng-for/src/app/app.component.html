@@ -1,0 +1,33 @@
+<ul>
+  <!-- exported values like index, first, last, even, odd -->
+  <li *ngFor="let course of courses; index as i">
+    {{ i }} - {{ course.name }}
+  </li>
+</ul>
+
+<ul>
+  <!-- exported values like index, first, last, even, odd -->
+  <li *ngFor="let course of courses; even as isEven">
+    {{ course.name }}
+    <span *ngIf="isEven">(Even)</span>
+    <button (click)="onRemove(course)">Remove</button>
+    <button (click)="onEdit(course)">Edit</button>
+  </li>
+</ul>
+
+<button (click)="onClick()">Add</button>
+
+<!-- this is the change detection, so whenever you click a button(dom event), or perform ajax request, 
+      or a timer function complets, angular perform a change detection  -->
+
+<!-- by default angular is traking list by its reference in memory, you can see that if you inspect elements
+  in the page while you click loadCourses2 button, you will see that angular reload the entire list each
+  time, if you want to change that to load the list only if the id changed and make it trak the list by 
+  the object id, you can do it like this, but don't use this by default in every page, use it only
+  when you notice performance isues with a page -->
+<button (click)="loadCourses2()">Load Courses2</button>
+<ul>
+  <li *ngFor="let course of courses2; trackCourse">
+    {{ course.name }}
+  </li>
+</ul>

@@ -1,0 +1,185 @@
+<app-stepper></app-stepper>
+<!-- <app-table></app-table> -->
+<app-table2></app-table2>
+
+<!-- this is the main link 
+https://material.angular.io/components/categories
+choose the component you want and then import its module from api
+then use it from the examples -->
+<!------------------------------------ Checkbox ---------------------------->
+<mat-checkbox>test check box</mat-checkbox> <br>
+<!-- the material design element have the same attributes as the html5 attributes -->
+<input type="checkbox" checked="checked" value="abc" (change)="onChange($event)">
+
+<mat-checkbox
+    #myCheckbox
+    [checked]="isChecked"
+    (change)="onChange($event)"
+    >test native check box</mat-checkbox>
+
+<div *ngIf="isChecked">
+    shown if checkbox checked
+</div>
+
+<div *ngIf="myCheckbox.checked">
+        shown if checkbox checked another way
+    </div>
+<!------------------------------------ Radiobutton ---------------------------->
+<!-- in this radio group only one radio button will be selectable -->
+<!-- you can have multiple radio group in the page -->
+<!-- if you gave the radio group value, the radio button with that value will be checked -->
+<mat-radio-group value="2">
+    <mat-radio-button value="1">Option 1</mat-radio-button>
+    <mat-radio-button value="2">Option 2</mat-radio-button>
+</mat-radio-group>
+<!-- you can have the same attributes exactly like the checkbox -->
+<br>
+<!------------------------------------ Select ---------------------------->
+<!-- it's normaly like the html5 select -->
+<mat-form-field>
+    <!-- if you want specefic choise to be selected by default -->
+    <mat-select [(ngModel)]="mySelectedColor">
+        <mat-option *ngFor="let item of colors" [value]="item.id">{{ item.name }}</mat-option>
+    </mat-select>
+</mat-form-field>
+<br>
+<mat-form-field>
+    <!-- multiple selection -->
+    <mat-select [formControl]="multipleSelect" multiple (selectionChange)="multipleSelectOnChange()">
+        <mat-option *ngFor="let item of colors" [value]="item.id">{{ item.name }}</mat-option>
+    </mat-select>
+</mat-form-field>
+<br>
+<mat-form-field>
+    <!-- multiple selection -->
+    <mat-select [(ngModel)]="multipleSelectList" multiple (selectionChange)="multipleSelectOnChange()">
+        <mat-option *ngFor="let item of colors" [value]="item.id">{{ item.name }}</mat-option>
+    </mat-select>
+</mat-form-field>
+<br>
+<!--------------------------mat form field--------------------------->
+<!-- 
+    <mat-form-field> is a component used to wrap several Angular Material components and 
+    apply common Text field styles such as the underline, floating label, and hint messages.
+    *** The following Angular Material components are designed to work inside a <mat-form-field>:
+
+    <input matNativeControl> & 
+    <textarea matNativeControl>
+    <select matNativeControl>
+    <mat-select>
+    <mat-chip-list>
+ -->
+<br>
+<!--------------------------mat input, text area--------------------------->
+<input matInput placeholder="input outside mat form field" value="Ahmad" required>
+
+ <mat-form-field>
+    <input matInput placeholder="Please enter your name" value="Ahmad" required>
+    <mat-hint>Errors appear instantly!</mat-hint>
+    <mat-error>
+      The name is required.
+    </mat-error>
+ </mat-form-field>  <br>
+
+ <mat-form-field >
+     <!-- the prefix and suffex will always be in the input, you can't delte them -->
+        <span matPrefix>admin.</span>
+        <input matInput placeholder="email">
+        <span matSuffix>@yahoo.com</span>
+ </mat-form-field>  <br>
+
+ <mat-form-field>
+    <textarea matInput placeholder="normal text area"></textarea>
+ </mat-form-field> <br>
+ 
+ <mat-form-field>
+        <textarea matInput 
+                  placeholder="auto size text area to automatically fit its content"
+                  cdkTextareaAutosize
+                  #autosize="cdkTextareaAutosize"
+                  ></textarea>
+     </mat-form-field>
+<!--------------------------mat date picker --------------------------->
+
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+           
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker2" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker touchUi #picker2></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input 
+        [min]="minDate"
+        [max]="maxDate"
+        matInput [matDatepicker]="picker3" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+        <mat-datepicker touchUi #picker3></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input 
+        (focus)="picker4.open()"
+        matInput [matDatepicker]="picker4" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+        <mat-datepicker touchUi #picker4></mat-datepicker>
+    </mat-form-field>
+
+<!--------------------------icons --------------------------->
+
+<!-- 
+    if you want to use angular material icons you nedd to add link to it in the index.html
+    ** when you add icon, use its label in the material.io icon link
+    https://material.io/tools/icons/?style=baseline
+ -->
+
+ <mat-icon>alarm_on</mat-icon>
+ <mat-icon>add_alert</mat-icon>
+ <!-- if you want to change the icons colors you can do this from css or by custom theme -->
+<br>
+<!-------------------------- buttons --------------------------->
+<!-- buttons are normal buttons with directives to them -->
+<!-- by default the bkground color to the button, is from the general theme -->
+<!-- there are 3 options for the colors (primary, accent, warn) -->
+<button mat-button >Normal button</button>
+<button mat-raised-button color="primary">Primary</button>
+<button mat-raised-button color="accent">Accent</button>
+<button mat-raised-button color="warn">Warn</button>
+
+<!-- flotable action buttons are buttons with icons in it instead of text -->
+<button mat-fab color="primary"> <mat-icon>check</mat-icon> </button>
+<br>
+<mat-progress-spinner mode="indeterminate" *ngIf="isSpinnerLoading"></mat-progress-spinner>
+<!-- the two lines are the same -->
+<!-- <mat-spinner></mat-spinner> -->
+<label *ngIf="!isSpinnerLoading">loader finished successfully</label>
+<!-------------------------- tooltip --------------------------->
+<br>
+<span
+matTooltip="this is a tooltip"
+matTooltipPosition="before"
+>Hello tooltip</span>
+<!-- the existed positions are: 
+    ['after', 'before', 'above', 'below', 'left', 'right'] -->
+<!-------------------------- tabs --------------------------->
+<mat-tab-group>
+    <mat-tab label="first">First tab contents</mat-tab>
+    <mat-tab label="second">Second tab contents</mat-tab>
+    <mat-tab label="third">Third tab contents</mat-tab>
+</mat-tab-group>
+
+<!-------------------------- dialog --------------------------->
+<button (click)="openDialog()" mat-raised-button color="primary">Open Dialog To Select animal</button>
+<label>the selected animal is: {{ animal }}</label>
+
+<!-- mat menu -->
+<button mat-button [matMenuTriggerFor]="menu2">Menu</button>
+<mat-menu #menu2="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>

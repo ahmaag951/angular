@@ -1,0 +1,10 @@
+<form [formGroup]="form">
+
+  <div [formGroup]="skillGroup" *ngFor="let skillGroup of form.controls.skills.controls;let i = index;">
+    <div><input type="text" formControlName="skillName" /></div>
+  </div>
+  <button (click)="addSkill()">Add Skill</button>
+  <button type="button" (click)="onSave()">Save</button>
+</form>
+
+form valid {{ form.valid }}

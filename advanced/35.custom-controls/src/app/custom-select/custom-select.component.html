@@ -1,0 +1,5 @@
+<!-- <input [(ngModel)]="value"> -->
+
+<select [(ngModel)]="value">
+  <option *ngFor="let item of cars" [value]="item.id">{{ item.name }}</option>
+</select>

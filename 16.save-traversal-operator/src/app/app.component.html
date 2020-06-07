@@ -1,0 +1,9 @@
+<!-- if task.assignee is null, an error will happen
+there are two solutions for this
+1. using ngIf -->
+<span *ngIf="task.assignee">{{ task.assignee.name}} </span>
+<!-- 2. save traversal operator -->
+<!-- the span exists in the dom but it's empty -->
+<span>{{ task.assignee?.name}} </span>
+
+if this line is shown, that means there are no errors in the page

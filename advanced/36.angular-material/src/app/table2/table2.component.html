@@ -1,0 +1,22 @@
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>id header</th>
+      <td mat-cell *matCellDef="let country">{{ country.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name header</th>
+      <td mat-cell *matCellDef="let country">{{ country.name }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay"></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[3, 5, 7]" showFirstLastButtons></mat-paginator>
+</div>
+
+<!-- 
+  Otherwise if you are implementing the logic to paginate your data, you will want to listen to 
+  the paginator's (page) output and pass the right slice of data to your table.
+ -->

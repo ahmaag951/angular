@@ -1,0 +1,5 @@
+<form [formGroup]="form">
+    <input #inputFile type="file" accept="*" formControlName="fileName"
+                (change)="onSelectedFilesChanged(inputFile)">
+    <button (click)="save()">submit</button>
+</form>

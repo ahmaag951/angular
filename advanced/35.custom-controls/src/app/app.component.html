@@ -1,0 +1,5 @@
+<form [formGroup]="form">
+  <app-custom-input formControlName="external"></app-custom-input>
+  <app-custom-select formControlName="car" [cars]="cars"></app-custom-select>
+  <button (click)="onClick()">Submit</button>
+</form>

@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<button class="btn btn-primary">Click Here</button>
+<bootstrap-panel>
+  <div class="heading">I'm the heading from app.component</div>
+  <div id="body">I'm the body from app.component</div>
+  <ng-container id="ngContain">I'm the body from app.component and I'm from ng-container</ng-container>
+
+<!-- there is another way to use it without the need to create a dive and give it a class or id
+this way is using ng-container, so at runtime angular will take only the contents of that container 
+so it will not load div in the dom, it will only load the contents of the ng-container -->
+</bootstrap-panel>

@@ -1,0 +1,16 @@
+<!-- <span 
+  class="glyphicon"
+  [class.glyphicon-star]="isFavorite"
+  [class.glyphicon-start-empty]="!isFavorite"
+  (click)="onClick()">
+
+</span>
+
+<span class="glyphicon glyphicon-star">ab</span> -->
+
+<button 
+  class="btn btn-primary" 
+  (click)="onClick()">
+  {{ isFavorite ? 'Favorite' : 'Not Favorite'}}  
+</button>
+

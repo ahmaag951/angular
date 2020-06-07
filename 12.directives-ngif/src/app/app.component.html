@@ -1,0 +1,40 @@
+<div *ngIf="true">
+  truthy, this div will appear
+</div>
+
+<div *ngIf="false">
+  falsy, this div will not appear
+</div>
+
+<div *ngIf="courses.length > 0">
+  there are courses
+</div>
+
+---------------------- if...else---------------------
+<div *ngIf="courses.length > 0; else noCourses">
+  There are courses
+</div>
+<ng-template #noCourses>
+  No Courses
+</ng-template>
+---------------------- another way ---------------------<br>
+<div *ngIf="courses.length > 0; then withCourses else withoutCourses"></div>
+<ng-template #withCourses>
+  There are courses
+</ng-template>
+<ng-template #withoutCourses>
+  No Courses
+</ng-template>
+<br>
+the ngIf add or remove the target from the dom, it's not hidden in the page, to make them hidden do like this <br>
+<div [hidden]="courses.length > 0">
+  courses hidden
+</div>
+
+<!-- if you are working with a tree with alot of children use ngIf because these elements can take
+  substancial memory and computing resources, you don't want to put them in the dom if you are not
+  going to show them to the user, and angular will continue to check for changes even to the invisible
+  properties (the change detection mechanism in angular) 
+  but if you have expensive resources or nodes in the tree to create and keep showing and hiding them
+  it's better to create them once and then show or hide them using hidden property and also for the 
+  small element tree you can use hidden -->

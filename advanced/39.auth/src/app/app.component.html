@@ -1,0 +1,9 @@
+<div *ngIf="authService.isLogedIn(); else notLogedIn">
+    <button (click)="onLogout()">Logout</button>
+</div>
+
+<ng-template #notLogedIn>
+    <button (click)="onLogin()">Login</button>
+</ng-template>
+
+<router-outlet></router-outlet>

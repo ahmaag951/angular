@@ -1,0 +1,34 @@
+<p>
+  contact-form works!
+</p>
+
+<form>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea type="text" id="comment" cols="30" rows="10" class="form-control"></textarea>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
+
+<!-- in angular we have a class called FormControl, with it we can know some data about that input field
+  like (value, touched, untouched, dirty, pristine, valid, errors)
+  also we have class called form group, it represents a group of controls in the form 
+  control class, and group control class 
+  to add validation to a form, you need to create a form group object for the form, and a form 
+control object for each field in the form, so we can keep trak of the state of each input field, 
+and the entire form as a whole -->
+<!-- there are two ways to create that control objects
+1. Directives => [template driven forms] angular will create that control form implicitly under the hood 
+2. code => [Reactive forms]
+
+the reactive forms gives you more control over the validation logic, because you write your validation by
+your own, and that good for the forms that have complex validations, also it's good for unit testing
+if you want to test your validation logic
+
+on the other hand, the template driven approach is good for simple forms with simple validations like 
+making some fields required or within a given range, also it's easier to create and you write less code ,
+but you have less control over the validation of the form, we will start with the template driven form-->

@@ -1,0 +1,14 @@
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\bin\Debug\netcoreapp2.2\authentication.deps.json
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\bin\Debug\netcoreapp2.2\authentication.runtimeconfig.json
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\bin\Debug\netcoreapp2.2\authentication.runtimeconfig.dev.json
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\bin\Debug\netcoreapp2.2\authentication.dll
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\bin\Debug\netcoreapp2.2\authentication.pdb
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.csprojAssemblyReference.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.csproj.CoreCompileInputs.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.RazorAssemblyInfo.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.RazorAssemblyInfo.cs
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.AssemblyInfoInputs.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.AssemblyInfo.cs
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.RazorTargetAssemblyInfo.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.dll
+C:\Users\a.ezzat.APEXUNITED\source\repos\authentication\authentication\obj\Debug\netcoreapp2.2\authentication.pdb

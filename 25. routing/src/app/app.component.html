@@ -1,0 +1,24 @@
+home
+<router-outlet></router-outlet>
+
+<a routerLink="courses">Courses</a><br>
+<a routerLink="/courses">Courses</a><br>
+<!-- when we deal with dynamic url, so instead of using the routerlink as an attribute,
+we should use the proepry binding syntax, and instead of binding it to a string, bind it to 
+an expression, in this expression we have an array of path and route parameters -->
+<a [routerLink]="['courses', courseNumber]">Course 2</a><br>
+<!-- routing with multiple parameters -->
+<a [routerLink]="['courses', courseNumber, 'math']">Course math</a><br>
+
+<!-- query parameters are used for optional parameters
+routerLink exposes a property that we can use to send query parameters, which takes an object,
+and in this object we can send all the optional parameters -->
+<a [routerLink]="['courses']" [queryParams]="{ page: courseNumber, order: 'newest' }">Course with query parameters</a>
+
+<!-- by this you are telling that when the link is active add these classes -->
+<ul>
+  <li routerLinkActive="active passive"><a [routerLink]="['courses', 1]">Course 1</a></li>
+  <li routerLinkActive="active passive"><a [routerLink]="['courses', 2]">Course 2</a></li>
+</ul>
+
+

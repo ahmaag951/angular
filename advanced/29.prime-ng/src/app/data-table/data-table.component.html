@@ -1,0 +1,46 @@
+<p-table #mytable [columns]="cols" [value]="data" [paginator]="true" [rows]="3" [customSort]="true"
+    (onSort)="customSort($event)" [globalFilterFields]="['vin', 'year', 'color']">
+    <ng-template pTemplate="caption">
+        this is the greate caption of china
+        <!--  Available match modes are 
+            "startsWith", "contains", "endsWith", "equals", "notEquals", "in", "lt", "lte", "gt" and "gte". -->
+        <input placeholder="global filter" (input)="mytable.filterGlobal($event.target.value, 'contains')">
+    </ng-template>
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th>Serial</th>
+            <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                {{ col.header }}
+                <p-sortIcon [field]="col.field"></p-sortIcon>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th *ngFor="let col of columns" [ngSwitch]="col.filterMode">
+                <input pInputText *ngSwitchCase="FilterMode.text" [placeholder]="col.header + ' search'"
+                    (input)="mytable.filter($event.target.value, col.field, col.filterMatchMode)">
+                <!-- <p-dropdown *ngSwitchCase="FilterMode.select" [options]="brands"
+                    (onChange)="mytable.filter($event.value, col.field, 'equals')"></p-dropdown> -->
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item let-columns="columns" let-rowIndex="rowIndex">
+        <tr>
+            <td>{{ rowIndex + 1 }}</td>
+            <td *ngFor="let col of columns">
+                {{ item[col.field] }}
+            </td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="footer">
+        this is the greate footer of all ages
+    </ng-template>
+    <ng-template pTemplate="summary">
+        this is a simple summary showing the total number of data: {{ data?.length }} <br>
+    </ng-template>
+    <ng-template pTemplate="paginatorleft" let-info>
+        on the left of the paginator ==> {{ "first: " + info.first }} --
+        {{ "info: " + info.rows }} -- {{ "page: " + info.page }} --
+        {{ "totalRecords: " + info.totalRecords }}
+    </ng-template>
+</p-table>
