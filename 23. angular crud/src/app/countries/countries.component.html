@@ -1,0 +1,12 @@
+<p>
+  countries works!
+</p>
+
+
+<input [(ngModel)]="countryNameInput" type="text" placeholder="Enter coutnry name to add and press enter" #countryName (keyup.enter)="addCountry(countryName)">
+
+<div *ngFor="let country of countries">
+  <button (click)="Update(country)" class="btn btn-primary btn-sm">Update</button>
+  <button (click)="Delete(country)" class="btn btn-primary btn-sm">Delete</button>
+  {{ country.CountryIdPk + ' - ' + country.CountryName + ' ' + country.CountryLanguage }}
+</div>

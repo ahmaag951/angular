@@ -1,0 +1,22 @@
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.deps.json
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.runtimeconfig.json
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.runtimeconfig.dev.json
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.dll
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.pdb
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.csprojResolveAssemblyReference.cache
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.AssemblyInfo.cs
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.dll
+C:\Users\admin\source\repos\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.pdb
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.deps.json
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.runtimeconfig.json
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.runtimeconfig.dev.json
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.dll
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\bin\Debug\netcoreapp2.0\generic_http_service.pdb
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.csprojResolveAssemblyReference.cache
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.csproj.CoreCompileInputs.cache
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.AssemblyInfoInputs.cache
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.AssemblyInfo.cs
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.dll
+D:\CS\samples\angular\generic http service\Backend\generic_http_service\generic_http_service\obj\Debug\netcoreapp2.0\generic_http_service.pdb

@@ -1,0 +1,30 @@
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.csprojAssemblyReference.cache
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.csproj.CoreCompileInputs.cache
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.RazorAssemblyInfo.cache
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.RazorAssemblyInfo.cs
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.AssemblyInfoInputs.cache
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.AssemblyInfo.cs
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.deps.json
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.runtimeconfig.json
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.runtimeconfig.dev.json
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.dll
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.pdb
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.RazorTargetAssemblyInfo.cache
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.dll
+D:\samples\angular samples\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.pdb
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\appsettings.json
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.deps.json
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.runtimeconfig.json
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.runtimeconfig.dev.json
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.dll
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\ImageUploader.pdb
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.csprojAssemblyReference.cache
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.RazorAssemblyInfo.cache
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.RazorAssemblyInfo.cs
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.AssemblyInfoInputs.cache
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.AssemblyInfo.cs
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.RazorTargetAssemblyInfo.cache
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.dll
+F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.pdb

@@ -1,0 +1,37 @@
+<form #f="ngForm">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input ngModel name="firstName" #firstName="ngModel" (change)="log(firstName)" type="text" id="firstName" class="form-control">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input ngModel name="isSubscribed" type="checkbox"> Subscribe to mailing list
+    </label>
+  </div>
+  <div class="form-group">
+    <label>Contact Method</label>
+    <select ngModel name="contactMethod">
+        <option *ngFor="let item of contactMethods" [value]="item.id">{{ item.name}}</option>
+    </select>
+  </div>
+  <!-- sometimes you want to set the value of the dropdown list to the whole object not the value only
+  to do that bind to ngValue not the value, because the value of option can't hold object, it can hold
+  only string, but ngValue can
+   -->
+  <div class="form-group">
+      <label>Contact Method2</label>
+      <select ngModel name="contactMethod2">
+          <option *ngFor="let item of contactMethods" [ngValue]="item">{{ item.name}}</option>
+      </select>
+    </div>
+    <!-- in the video he made the ngFor on the whole div, and he removed the label contact method radio: -->
+    <div class="radio">
+      <label>Contact Method Radio: </label>
+        <label *ngFor="let item of contactMethods"><input ngModel name="methodRadio" type="radio" [value]="item.id">{{item.name}}</label>
+      </div>
+  <p>
+    this is just for diagnosting
+    <br> {{ f.value | json }}
+  </p>
+  <button class="btn btn-primary">Submit</button>
+</form>

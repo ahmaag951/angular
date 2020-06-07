@@ -1,0 +1,69 @@
+<input matInput placeholder="please enter email">
+
+&nbsp;
+<mat-form-field>
+    <input matInput placeholder="please enter email" required>
+    <mat-error>errors shown here, but I don't know why it's not working</mat-error>
+</mat-form-field>
+
+<br>
+<mat-form-field>
+    <mat-label>Car</mat-label>
+    <mat-select [(ngModel)]="option">
+        <mat-option value="1">BMW</mat-option>
+        <mat-option value="2">Volvo</mat-option>
+    </mat-select>
+</mat-form-field>
+
+&nbsp;
+<mat-form-field appearance="outline">
+    <mat-select>
+        <mat-option value="1">Volvo</mat-option>
+        <mat-option value="2">BMW</mat-option>
+    </mat-select>
+</mat-form-field>
+
+<br>
+<mat-radio-group [(ngModel)]="option">
+    <mat-radio-button value="1">Option1</mat-radio-button>
+    <mat-radio-button value="2">Option1</mat-radio-button>
+</mat-radio-group>
+
+<br>
+<button mat-button>Click</button> &nbsp;
+<button mat-raised-button>Click</button>&nbsp;
+<button mat-button color="primary">Click</button>
+<button mat-raised-button color="primary">Click</button>
+
+<br>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<br>
+<mat-form-field>
+    <label>email</label>
+    <input matInput placeholder="email">
+</mat-form-field>
+<br>
+<mat-checkbox label-position="before">Check</mat-checkbox>
+
+<mat-card style="border: solid darkolivegreen">
+    we are in a mat card <br>
+    check it
+</mat-card>
+
+<br>
+<mat-form-field>
+    <mat-label>notes</mat-label>
+    <textarea cdkTextareaAutosize matInput placeholder="notes"></textarea>
+</mat-form-field>
+
+<br>
+<mat-icon color="warn">delete</mat-icon>
+
+<!-- fab is flotable action buttons, buttons with icons instead of text -->
+<button mat-fab>
+    <mat-icon>delete</mat-icon>
+</button>

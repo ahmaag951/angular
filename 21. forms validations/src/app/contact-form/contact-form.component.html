@@ -1,0 +1,82 @@
+ <!--
+   by default angular addes ngForm in any form that don't have ngNoForm, or formGroup attribute, so we 
+   need to put that ngForm value into a temp variable like we did with ngModel
+  to check the validation of the whole form, ngSubmit is an output property of it
+  now we will create a submit method in our component and send the form to it, to check for it
+  -->
+<form #f="ngForm" (ngSubmit)="submit(f)">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+
+    <!-- I created a template variable to hold the ngModel that is applied on the input
+    then we passed that variable to the method, to log it -->
+    <input ngModel name="firstName" #firstName="ngModel" (change)="log(firstName)" type="text" id="firstName" class="form-control">
+
+  </div>
+  <div class="form-group">
+    <label>Required Input</label>
+    <input 
+    required 
+    ngModel 
+    name="requiredInput"
+    #requiredInput="ngModel"  
+    type="text" 
+    class="form-control">
+    <div *ngIf="requiredInput.touched && requiredInput.invalid" class="alert alert-danger">The Input Is Required</div>
+  </div>
+
+  <div class="form-group">
+    <label>Input with max length and min length and pattern</label>
+    <input 
+      required 
+      minlength="3" 
+      maxlength="6" 
+      pattern="banana" 
+      ngModel
+      name="minMaxInput"
+      #minMaxInput="ngModel" 
+      (change)="log(minMaxInput)"  
+      type="text" 
+      class="form-control">
+    <div *ngIf="minMaxInput.touched && minMaxInput.invalid" class="alert alert-danger">
+      <div *ngIf="minMaxInput.errors.required">The Input is required</div>
+      <div *ngIf="minMaxInput.errors.maxlength">The Input has max length minMaxInput.errors.maxlength  {{ minMaxInput.errors.maxlength.requiredLength}}</div>
+      <div *ngIf="minMaxInput.errors.minlength">The Input has min length  {{ minMaxInput.errors.minlength.requiredLength }}</div>
+      <div *ngIf="minMaxInput.errors.pattern">The Input should match the pattern 'banana'</div>
+    </div>
+    <!-- if you want to make validation with regular expression, you can use something called 'pattern', it's
+    exactly like minlength="3" => pattern="...regx" -->
+  </div>
+
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea ngModel name="comment" type="text" id="comment" cols="30" rows="10" class="form-control"></textarea>
+  </div>
+
+ <!-- sometimes when you are working with complex forms you might have multiple groups in your form
+  you have object in your form like contact object, now when you log the ngform you will find the 
+contact as an object, and the contact name is a property in it, you can also make the validations 
+on that whole object by giving it a temp variable -->
+  <div ngModelGroup="contact" #contact="ngModelGroup">
+      <div *ngIf="contact.touched && contact.invalid" class="alert alert-danger">
+        something wrong with the contact object...
+      </div>
+      <div class="form-group">
+          <label for="contactName">Contact Name</label>
+          <input ngModel name="contactName" type="text" id="contactName" cols="30" rows="10" class="form-control"> 
+        </div>    
+  </div>
+  <!-- you can disable the submit button until your form is valid -->
+  <button class="btn btn-primary" [disabled]="f.invalid">Submit</button>
+</form>
+
+<!-- 
+
+  in template driven approach we apply a directive and angular will create a contorl object assosiated 
+  with that input field under the hood 
+
+  we used ngModel before with banana in a box [(ngModel)] for the two way binding, but if you used 
+  the ngModel by itself with an input angular will create a control object and associate it with that 
+  input field under the hood and you have to give that input a name to distinguish these control objects
+
+ -->

@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+
+<!-- <img [src]="imageUrl" /> 
+this is the way how we send inputs to a dom object
+<button (click)="onClick()"><button>
+this is the way how we respond to a dom object
+
+now we want to do this with our components 'favorite in this example' 
+which means we want to send input to this component and listen for the changes that 
+happens to this component, this is called 'component api', because it has input(property binding) and 
+output (event binding) -->
+
+<favorite [isFavorite]="false"  (change)="onFavoriteChanged($event)"></favorite>
+<!-- $event represents anything that we pass when raising an event, in this case a boolean value, or
+the whole object if you want -->
+<!-- <favorite [is-favorite-alias]="false"></favorite> -->
