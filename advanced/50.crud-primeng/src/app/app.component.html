@@ -1,0 +1,21 @@
+hello <br>
+<button pButton type="button" label="Add" class="p-button-secondary" (click)="add()"></button>
+<input pInputText type="text" placeholder="course" class="p-inputtext-lg" [(ngModel)]="inputVal"> <br>
+
+<p-table [value]="courses$ | async">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item>
+        <tr>
+            <td>{{item.payload.val()}}</td>
+            <td>
+                <button pButton type="button" label="edit" class="p-button-primary" (click)="edit(item.key)"></button>
+                <button pButton type="button" label="delete" class="p-button-danger"(click)="delete(item.key)"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
