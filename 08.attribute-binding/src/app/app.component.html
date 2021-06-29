@@ -2,9 +2,11 @@
   <tr>
     <!-- if you tried to bind attribute colSpan like property binding like this you will get an error -->
     <td [colSpan]="colSpanValue">
-      <!-- I don't know why this is not making error, but with the text attribute it makes error 
+      abc
+      <!-- I don't know why this is not making error, but with the text attribute it makes error maybe because they fixed it now.
     so the rest of the explanation will be on the text attribute -->
       <td [attr.colSpan]="colSpanValue">
+        def
       </td>
   </tr>
 </table>
