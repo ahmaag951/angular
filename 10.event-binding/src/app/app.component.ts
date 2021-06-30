@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'this titile is changed by ahmad ezzat';
-  textValue = "the starting text value"
+  textValue = 'the starting text value';
   onClick() {
     alert('Button Clicked');
   }
   onClickWithEvent($event) {
     alert('Please see the log console');
-    console.log($event)
+    console.log($event);
   }
 
   onKeyUp($event) {
@@ -35,8 +35,17 @@ export class AppComponent {
 
   }
   twoWayBinding1(text) {
-    
-    alert("the textValue field = " + this.textValue);
+
+    alert('the textValue field = ' + this.textValue);
+  }
+
+  onButtonClicked($event) {
+    console.log('onButtonClicked', $event);
+    $event.stopPropagation();
+  }
+
+  onDivClicked($event) {
+    console.log('onDivClicked', $event);
   }
 
 }

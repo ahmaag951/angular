@@ -11,9 +11,16 @@
 
 <!-- if you want to get access to the event object -->
 
-<!-- please see the rest of the 'event handling video' for more information about event bubling
-     and $event.stopPropagation() -->
-
+<!-- $event is the standard dom event we see in vanilla javascript for the dom object(in this case, it's the button) 
+    the hirearchy of calling the events in the event dom tree is from down to top, so in the following example the call of onButtonClicked()
+    will be before the call of onDivClicked() ...> this is called 'event bubbling', the events bubbles up in the dom tree,
+    if you handled an event and you want to stop event bubbling use => $event.stopPropagation() -->
+<div (click)="onDivClicked($event)">
+  This is the div to test event bubbling
+  <button (click)="onButtonClicked($event)">
+    test event bubbling
+  </button>
+</div>
 <!-- this is called event filter -->
 <br>
 <input (keyup)="onKeyUp($event)" />

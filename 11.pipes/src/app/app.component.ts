@@ -14,6 +14,8 @@ export class AppComponent {
     students: 30123,
     price: 190.95,
     releaseDate: new Date(2016, 3, 1)
-  }
+  };
+
+  testCustomPipe = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
 }
