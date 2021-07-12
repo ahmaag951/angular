@@ -14,12 +14,12 @@ export class AppComponent {
 /*
   the change in the title property will be base on the ng serve enviornment
   the default enviornment is development
-  ng serve --configuration=production or the same way ng serve --prod 
+  ng serve --configuration=production or the same way ng serve --prod
 
   to add new enviornemt like testing for example
   1. add enviornment.test.ts file in the enviornments
-  2. in angular.json file register this enviornment in the fileReplacements array 
-  This tells ng build and ng serve, “If I use the production configuration, replace the 
+  2. in angular.json file register this enviornment in the fileReplacements array
+  This tells ng build and ng serve, “If I use the production configuration, replace the
   contents of the environment.ts file with the contents of the environment.prod.ts file.”
   so for the new environment you need to object with the test environment
 
@@ -28,5 +28,8 @@ export class AppComponent {
   please note that the non development environment don't have the hot module replacement
   so, when you change someting in the code, it will not change automatically, you have to
   restart the server.
+
+  the problem in this approach is that you have to re-build the application if you want to change variables in the production,
+  but using ngx-envconfig you can do that without need to a new build.
 */
 }
