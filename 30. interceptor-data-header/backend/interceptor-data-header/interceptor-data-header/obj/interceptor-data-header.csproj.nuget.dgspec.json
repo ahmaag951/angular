@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CS\\samples\\angular\\interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj": {}
+    "D:\\CS\\samples\\angular\\github\\30. interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj": {}
   },
   "projects": {
-    "D:\\CS\\samples\\angular\\interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj": {
+    "D:\\CS\\samples\\angular\\github\\30. interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CS\\samples\\angular\\interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj",
+        "projectUniqueName": "D:\\CS\\samples\\angular\\github\\30. interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj",
         "projectName": "interceptor-data-header",
-        "projectPath": "D:\\CS\\samples\\angular\\interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj",
+        "projectPath": "D:\\CS\\samples\\angular\\github\\30. interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\CS\\samples\\angular\\interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\obj\\",
+        "outputPath": "D:\\CS\\samples\\angular\\github\\30. interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -69,7 +71,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

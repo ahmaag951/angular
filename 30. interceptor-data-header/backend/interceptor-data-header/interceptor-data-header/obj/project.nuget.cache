@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xzRkZyrWAAExSiTfBD0TnT3C+OX4kP1NewNMCsrBLkAozSZMbgzW4vypB05eiqSjT5RwPZWJMYCMitj+FRfD4g==",
+  "dgSpecHash": "DGfTxEN4NXHW9H63dkx5f57/4nl78mYrNMU56cwWOycqczK0RoEgBma1A3k7DwjlibwOJpxMA5q089MzbXYmbA==",
   "success": true,
-  "projectFilePath": "D:\\CS\\samples\\angular\\github\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "D:\\CS\\samples\\angular\\github\\30. interceptor-data-header\\backend\\interceptor-data-header\\interceptor-data-header\\interceptor-data-header.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
