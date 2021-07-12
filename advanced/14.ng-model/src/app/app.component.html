@@ -11,3 +11,18 @@
 
 <button (click)="onClick()">Click to change lastname from ts</button>
 <!-- https://angular.io/api/forms/NgModel#description -->
+
+
+<form [formGroup]="form">
+
+  <input formControlName="id" [(ngModel)]="test">
+  <!-- you can't use ngModel with input that doesn't contains formControlName -->
+  <!-- <input [(ngModel)]="test"> -->
+  <!-- but if you want to do that, you need to specify that the ngModel is 
+  standalone from the form -->
+  <input [(ngModel)]="test2" [ngModelOptions]="{standalone: true}" />
+
+  <button type="submit">Save</button>
+</form>
+Test: {{ test }} <br>
+Test2: {{ test2 }}

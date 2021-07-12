@@ -8,7 +8,7 @@ const simpleObservable = new Observable(observer => {
   observer.next("bla bla bla")
   observer.next("bla 22")
   observer.next("bla 33")
-  observer.complete()
+  observer.complete();
 });
 
 @Component({
@@ -25,7 +25,7 @@ export class AppComponent {
 
   add() {
     simpleObservable.subscribe(result => {
-      console.log('normal subscription with any operators', result);
+      console.log('normal subscription without any operators', result);
     });
 
     of('abcd from of').subscribe(result => {
@@ -41,7 +41,7 @@ export class AppComponent {
     });
 
     simpleObservable.pipe(
-      map(x => x + ".....") // these dots will be added to the 
+      map(x => x + ".....") // these dots will be added to the
       // returned result from the observable
     ).subscribe(result => {
       console.log(result);

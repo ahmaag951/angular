@@ -2,44 +2,46 @@
 sass
 Syntactically Awesome Style Sheet
 
+ this file (theme.scss) should be added to angular.json styles 
+
+ changes to angular.json file are not visible unless you recompile your application (ng serve)
+
+ - the problem in css is that if you needed to change color for example in a file, 
+ you have to change it in multiple places
+ - we can use variables in scss
+
 */
-
-// this file (theme.scss) should be added to angular.json styles 
-
-// changes to angular.json file are not visible unless you recompile 
-// your application (ng serve)
-
-// - the problem in css is that if you needed to change color for example in a file, 
-// you have to change it in multiple places
-// - we can use variables in scss
-h1 { color: green;}
+h1 {
+  color: green;
+}
 
 $myColor: green;
 
-h2 { color: $myColor;}
+h2 {
+  color: $myColor;
+}
 
 // the preprocessor will convert this to css and give it to the browser
 
-@mixin myMixin($thePreferedColor) {
-    background-color: $thePreferedColor;
-    padding: 5 px;
+@mixin myMixin($thePreferredColor) {
+  background-color: $thePreferredColor;
+  padding: 5 px;
 }
 
-.box{
-    @include myMixin(crimson);
-    color: black;
+.box {
+  @include myMixin(crimson);
+  color: black;
 }
 
-.modern-box{
-    @include myMixin(gray);
-
+.modern-box {
+  @include myMixin(gray);
 }
 
 /*
 themes
 - primary is the website primary color
 - secondary (accent) for sliders and buttons, ...
-- warn is for the warninngs
+- warn is for the warnings
 
 to pick the primary and secondary colors and 
 https://material.io/tools/color/#!/?view.left=0&view.right=0

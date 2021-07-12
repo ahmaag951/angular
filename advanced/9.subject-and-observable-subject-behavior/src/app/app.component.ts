@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, Subject, BehaviorSubject, of } from 'rxjs';
 
-//https://medium.com/@luukgruijs/understanding-rxjs-subjects-339428a1815b
+// https://medium.com/@luukgruijs/understanding-rxjs-subjects-339428a1815b
 
 const myObservable = Observable.create((observer) => {
   // this is an observable that return random number to its subscribers
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     this.start();
   }
   /*
-  The difference betwenn the subject and the observable is that the observable is unicast
+  The difference between the subject and the observable is that the observable is unicast
   and the subject is multicast, that means the subscribers of the observable each one
   will get different execution. unicast means that only one listens for each observable and multicast
   means that every subscriber will get the same result
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
     });
 
     myBehaviorSubject.subscribe((data) => {
-      console.log('Behaviour subject first subscribtion ', data);
+      console.log('Behavior subject first subscription ', data);
     });
 
     // you have to subscribe to the data first before you send it,
@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
     });
 
     myBehaviorSubject.subscribe((data) => {
-      console.log('Behaviour Subject second subscribtion ', data);
+      console.log('Behavior Subject second subscription ', data);
     });
 
     mySubject.next(Math.random());
