@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CS\\ANGULAR\\0.samples\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "D:\\CS\\samples\\angular\\github\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "F:\\CS\\ANGULAR\\0.samples\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "D:\\CS\\samples\\angular\\github\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CS\\ANGULAR\\0.samples\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "D:\\CS\\samples\\angular\\github\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "F:\\CS\\ANGULAR\\0.samples\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "D:\\CS\\samples\\angular\\github\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "F:\\CS\\ANGULAR\\0.samples\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "D:\\CS\\samples\\angular\\github\\29.crud-grid-popup\\Backend\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -69,7 +71,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
