@@ -17,7 +17,7 @@ export class AppComponent {
       );
 
     observble.subscribe(result => console.log('result from observable: ', result));
-
+        // converting observables to promises are not recommended unless you have a strong reason to do so
     await observble.toPromise().then(result => console.log('result from promise:', result));
     console.log('this should be logged after the result');
 

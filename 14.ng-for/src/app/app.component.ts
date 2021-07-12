@@ -37,6 +37,8 @@ export class AppComponent {
   }
 
   trackCourse(index, course) {
+    // if the course is exist and we have a course object, we return its id not the course itself, so the comparsion will be based on the id
     return course ? course.id : undefined;
+    // now if you inspect the page elements, you will not notice changing in the li in the list, because the list is not reloaded
   }
 }
