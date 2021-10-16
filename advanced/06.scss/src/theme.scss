@@ -11,6 +11,9 @@ Syntactically Awesome Style Sheet
  - we can use variables in scss
 
 */
+
+@import "assets/scss/variables";
+
 h1 {
   color: green;
 }
@@ -51,3 +54,43 @@ https://material.io/tools/color/#!/?view.left=0&view.right=0
 */
 
 // typography: is about changing the font weight and the font (times new roman)
+
+  /*
+    there are many languages that you can use to write your code, like sass, less and styleus
+    They are the same, but they are different in syntax
+    there are two versions of sass (.sass, .scss)
+    sass is the old version, the less common, indentation oriented syntax and difficult to learn
+    scss is similar to css syntax, easier to learn, it's the newer version and more common
+
+    DRY, WET (don't repeat yourself - write everything twice)
+
+    partials and imports allows you to devide a css into multiple files and then combine them for
+    deployment to the web
+
+    the underscore at the begingin of the file name identifies them as partials, and when you import them
+    you import them in the styles file without the underscore or the file extension
+
+    the css preprocessor will then combine all the partials in the file and convert them to one css file after any change of any partial
+
+*/
+
+p {
+    color: $my-custom-variable;
+}
+
+/* 
+    this feature is called nesting
+    this code will be converted to css to be 
+    ul li {} and ul a {} 
+*/
+
+ul {
+    li {
+        color: indigo;
+    }
+    
+    a {
+        color: forestgreen;
+    }
+}
+
