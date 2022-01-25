@@ -28,16 +28,17 @@ h2 {
 
 @mixin myMixin($thePreferredColor) {
   background-color: $thePreferredColor;
-  padding: 5 px;
+  padding: 5px;
+  width: 25%
 }
 
 .box {
-  @include myMixin(crimson);
+  @include myMixin(rgba(21, 195, 137, 0.274));
   color: black;
 }
 
 .modern-box {
-  @include myMixin(gray);
+  @include myMixin(rgb(209, 212, 37));
 }
 
 /*
