@@ -1,8 +1,7 @@
 import { Component, OnDestroy } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 import { take } from 'rxjs/operators';
-
+import { Firestore, collectionData, collection } from '@angular/fire/firestore';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,39 +13,43 @@ export class AppComponent {
   // this is the link https://www.npmjs.com/package/@angular/fire
   // npm i firebase @angular/fire
 
+  // This is very important: to edit rules you need to go to this url https://console.firebase.google.com/u/0/project/testcrudangular/firestore/rules
+  // and edit the rules, or go to cloud firestore console => in firestore database
+
   displayedColumns: string[] = ['name', 'actions'];
   dataSource;
 
   inputVal = '';
 
-  constructor(private db: AngularFireDatabase) {
-    this.courses$ = db.list(this.dbPath).snapshotChanges();
-    this.dataSource = this.courses$;
-    // this.courses$.pipe(take(1)).subscribe(
-    //   list => this.dataSource = list
-    // );
+  constructor(firestore: Firestore) {
+    const list = collection(firestore, this.dbPath);
+    
+    this.courses$ = collectionData(list);
+    this.courses$.pipe(take(1)).subscribe(res => {
+      console.log('res', res);
+      this.dataSource = res;
+    })
   }
 
   add() {
-    if (this.inputVal === '') {
-      return;
-    }
-    this.db.list(this.dbPath).push(this.inputVal);
-    this.inputVal = '';
+    // if (this.inputVal === '') {
+    //   return;
+    // }
+    // this.db.list(this.dbPath).push(this.inputVal);
+    // this.inputVal = '';
   }
   edit(key) {
-    if (this.inputVal === '') {
-      return;
-    }
-    console.log(this.inputVal, key);
+    // if (this.inputVal === '') {
+    //   return;
+    // }
+    // console.log(this.inputVal, key);
 
-    this.db.object(this.dbPath + key).set(this.inputVal);
-    this.inputVal = '';
+    // this.db.object(this.dbPath + key).set(this.inputVal);
+    // this.inputVal = '';
   }
   delete(key) {
-    this.db.object(this.dbPath + key).remove();
+    // this.db.object(this.dbPath + key).remove();
   }
-
 
   // the firebase database is a real time database, so any change in the database will be immediatly executed.
   // when you make any change to the database you get the entire list of objects,
