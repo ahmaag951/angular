@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by me';
+  title = 'this title is changed by me';
   textValue = 'the starting text value';
   onClick() {
     alert('Button Clicked');

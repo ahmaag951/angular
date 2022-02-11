@@ -7,7 +7,7 @@ import { CoursesService } from './courses.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by me';
+  title = 'this title is changed by me';
   courses;
 
   constructor(service: CoursesService) {

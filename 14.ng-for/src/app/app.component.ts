@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by me';
+  title = 'this title is changed by me';
   courses = [
     { id: 1, name: 'course1' },
     { id: 2, name: 'course2' },

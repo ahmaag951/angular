@@ -7,7 +7,7 @@ import { CoursesService } from './courses.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by me';
+  title = 'this title is changed by me';
   courses;
   // go to the terminal and write 'ng g s courses'
   // g for generate, s for service, courses is the service name

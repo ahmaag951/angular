@@ -24,5 +24,5 @@ export class AppComponent implements OnInit {
 
   }
 
-  title = 'this titile is changed by me';
+  title = 'this title is changed by me';
 }
