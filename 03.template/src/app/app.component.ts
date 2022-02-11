@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by ahmad ezzat';
+  title = 'this titile is changed by me';
   testData = "Simple Data";
-  coursesList=["course1", "course2", "course3"];
+  coursesList = ["course1", "course2", "course3"];
 
-  getData(){
+  getData() {
     return this.title;
   }
 }

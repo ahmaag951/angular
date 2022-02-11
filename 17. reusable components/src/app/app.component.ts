@@ -7,7 +7,7 @@ import { FavoriteChangedEventArgs } from './favorite/favorite.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by ahmad ezzat';
+  title = 'this titile is changed by me';
   // onFavoriteChanged(isFavorite) {
   //   alert('onFavoriteChanged to: ' + isFavorite)
   // }

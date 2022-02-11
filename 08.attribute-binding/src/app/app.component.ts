@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by ahmad ezzat';
+  title = 'this titile is changed by me';
   colSpanValue = 2;
   inputText = "Start Input Value";
   counter = 1;
@@ -21,6 +21,6 @@ export class AppComponent {
     // the value of the input text will not be changed even if you changed it from the input
     // to change it, you need to use the two way binding
     alert(this.inputText + " and input text value is " + this.inputText);
-    
+
   }
 }

@@ -1,9 +1,9 @@
 2010 => angular js
 in mid 2016 => angular 2
-and upgrades happend to ang 2 => 2.0 - 2.1 - 2.2 - 2.3 - 4
+and upgrades happend to angular 2 => 2.0 - 2.1 - 2.2 - 2.3 - 4
 ang4 was not a new framework with alot of breaking changes 
 so what happened to version 3
-ang consists of a few different libraries that are distrubuted as seperate node packages via npm like
+angular consists of a few different libraries that are distrubuted as seperate node packages via npm like
 @angular/core => 2.3.0
 @angular/compiler => 2.3.0
 @angular/http => 2.3.0
