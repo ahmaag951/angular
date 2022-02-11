@@ -15,10 +15,9 @@ export class AppComponent {
   // 1. this component will be tightly coupled to the service, 
   // 2. if someone else in this application needed to call this service, he will write this code again
   // 3. the component should not include any logic other than the presentation logic
-  // details of how courses retreived should be delegated somewhere else in the app, 
+  // details of how courses retrieved should be delegated somewhere else in the app, 
   // so where we should implement that logic? by creating services
   // add file courses.service.ts
-
 
   constructor() {
     let service = new CoursesService();

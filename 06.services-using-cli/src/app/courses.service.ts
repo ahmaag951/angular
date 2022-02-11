@@ -8,9 +8,9 @@ import { LogService } from './log.service';
 // constructor(logService: LogService) { }
 // this tells angular that this class is injectable class
 // but here we don't need it, but it's already generated for us
-// the component decorator internally inclues this injectable decorator
+// the component decorator internally includes this injectable decorator
 // so if you commented the injectable and error will happen 'Can't resolve all parameters for CoursesService: (?).'
-// because this service depends on another
+// because this service depends on logService
 export class CoursesService {
 
   getCourses() {

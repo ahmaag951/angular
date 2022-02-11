@@ -14,9 +14,9 @@ because you are using it, and angular doesn't know about it
 
 the better approach is by using the cli
 you can reach it by opening a new cmd terminal window, or 
-you can open it here with pressing (ctrl + `) it's called backteck
+you can open it here with pressing (ctrl + `) it's called backtek
 and write 'ng g c ComponentName(like Courses)' g => generate, c=> component
-this will automaticaly create 4 files for you, and register the component in the module. 
+this will automatically create 4 files for you, and register the component in the module. 
 the spec file is for writing unit test for this component
 now you can use this component where you want in any html markup
 */

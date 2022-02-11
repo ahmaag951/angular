@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'this title is changed by me';
-  colSpanValue = 2;
+  colSpanValue = 5;
   inputText = "Start Input Value";
   counter = 1;
 

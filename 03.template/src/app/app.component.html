@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align: center">
   <h1>
     Welcome to {{ title }}!
     <br> {{ "You can write expressions here " + testData }}
@@ -7,16 +7,15 @@
     <!-- and you can call methods-->
     <br> {{ getData() }}
   </h1>
-  <!-- this syntax {{ }} is called string interpolation -->  
-  </div>
+  <!-- this syntax {{ }} is called string interpolation -->
+</div>
 
-  <!-- this is called directives, we use directives to manipulate the dom-->
-  <ul>
-      <!-- when you use a directive that modifies the stucture of the dom you should put * before it -->
-  
-      <li *ngFor="let item of coursesList">
-        {{ item }}
-  
-      </li>
-    </ul>
-  
+<ul>
+  <!-- this is called directives, we use directives to manipulate the dom -->
+  <!-- when you use a directive that modifies the structure of the dom you should put * before it -->
+
+  <li *ngFor="let item of coursesList">
+    {{ item }}
+
+  </li>
+</ul>

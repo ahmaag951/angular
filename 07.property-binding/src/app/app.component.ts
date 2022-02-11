@@ -13,14 +13,14 @@ import { Component } from '@angular/core';
   `,
   styleUrls: ['./app.component.css']
   /*
-  behind the scene when ang compiles our templates, it translates these interpolations into what we call 
+  behind the scene when angular compiles our templates, it translates these interpolations into what we call 
   'property binding', the property binding binds a property of the dom element like the src here to 
   a field or a property in our component (imageUrl). so when we use the first syntax (interpolation), 
   angular behind the scene translates that to the second syntax (property binding)
 and whenever the value of the field in the component changed, the src property of this element 
 automatically updated.
 
-so what do we choose? [this is an opinion]
+so what do we choose?
 interpolations works well with headings, divs, spans, paragraphs (wherever you want to render texts)
 because its syntax with text is more complex (<h2 [textContent]="title"></h2>)
 
