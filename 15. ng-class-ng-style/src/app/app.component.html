@@ -1,0 +1,53 @@
+<style>
+  .class1 {
+    background-color: aqua;
+  }
+
+  .class2 {
+    background-color: lightgreen;
+  }
+</style>
+
+<!-- property binding with class -->
+<button 
+[class.class1]="isClass1" 
+[class.class2]="!isClass1"
+>Click Here</button>
+
+<!-- using ngClass -->
+<button 
+[ngClass]="{
+  'class1': isClass1,
+  'class2': !isClass1
+}"
+>Click Here</button>
+
+<!-- with this approach we don't have to repeat the class property binding twice -->
+
+<!--------------------ng stle------------------>
+<button 
+  [style.backgroundColor]="canSave ? 'blue' : 'gray'"
+  [style.color]="canSave ? 'white' : 'black'"
+  [style.fontWeight]="canSave ? 'bold' : 'normal'"
+>
+save
+</button>
+
+<!-- with ng style -->
+<button 
+[ngStyle]="{
+  'backgroundColor': canSave ? 'blue' : 'gray',
+  'color': canSave ? 'white' : 'black',
+  'fontWeight':canSave ? 'bold' : 'normal'
+}"
+  
+  
+>
+save
+</button>
+
+<!-- to create a custom directive => ng g d the_directive_name -->
+
+<!-- <input type="text" myCustomDirective [myInput]="'this value if from my input'" style="display: block; width: 50%; margin: 5px;"> -->
+<!-- this is the same, and it's way better, but you have to change the input name to be exactly like the name of the directive -->
+<input type="text" [myCustomDirective]="'this value if from my input'" [mySecondInput]="'this is the second one'" style="display: block; width: 50%; margin: 5px;">

@@ -1,12 +1,13 @@
 <ul>
   <!-- exported values like index, first, last, even, odd -->
-  <li *ngFor="let course of courses; index as i">
-    {{ i }} - {{ course.name }}
+  <!-- first and last are boolean variables -->
+  <li *ngFor="let course of courses; index as i; first as f; last as l;">
+    {{ i }} - {{ course.name }} <br>
+    isfirst: {{ f }} - islast {{ l }}
   </li>
 </ul>
 
 <ul>
-  <!-- exported values like index, first, last, even, odd -->
   <li *ngFor="let course of courses; even as isEven">
     {{ course.name }}
     <span *ngIf="isEven">(Even)</span>
@@ -20,14 +21,19 @@
 <!-- this is the change detection, so whenever you click a button(dom event), or perform ajax request, 
       or a timer function complets, angular perform a change detection  -->
 
-<!-- by default angular is traking list by its reference in memory, you can see that if you inspect elements
-  in the page while you click loadCourses2 button, you will see that angular reload the entire list each
-  time, if you want to change that to load the list only if the id changed and make it trak the list by 
+<!-- by default angular is traking list by its reference in memory (by the object reference), so every time the list is loaded
+  angular will compare the new object reference with the old one and they will be different so it will load it again
+  you can see that if you inspect elements in the page while you click loadCourses2 button, you will see that angular reload the entire list each
+  time, you will notice a purple flash on the li when it loads the list again. 
+  
+  so we are going to change this, and instead of tracking objects by their identity, we are going to track them by the id
+  if you want to change that to load the list only if the id changed and make it trak the list by 
   the object id, you can do it like this, but don't use this by default in every page, use it only
   when you notice performance isues with a page -->
 <button (click)="loadCourses2()">Load Courses2</button>
 <ul>
-  <li *ngFor="let course of courses2; trackCourse">
+  <!-- the track course is a method in our class, but we are not calling it, we are using it as a reference -->
+  <li *ngFor="let course of courses2; trackBy: trackCourse">
     {{ course.name }}
   </li>
 </ul>

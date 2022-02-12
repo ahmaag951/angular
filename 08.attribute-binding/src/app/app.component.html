@@ -1,0 +1,44 @@
+<!-- This makes error 'Can't bind to 'text' since it isn't a known property of h1' -->
+<!-- <h1 [text]="title"></h1> -->
+<h1 [textContent]="'title'"></h1>
+<!-- this wont work -->
+<h1 [attr.text]="'title'"></h1>
+
+<table>
+  <tr>
+    <td>
+      one
+    <td>
+      two
+    </td>
+  </tr>
+  <tr>
+    <td [attr.colSpan]="colSpanValue">
+      three
+    </td>
+    <!-- both of them work fine -->
+    <!-- <td [colSpan]="colSpanValue">
+      three 
+    </td> -->
+  </tr>
+</table>
+
+<!-- by [attr.colSpan] you are telling angular that you are targeting the text attribute in the html element h1, there is different between dom and html, 
+dom is a model of objects that represents the structure of a document, it's a tree of elements in memory, 
+but html is a markup language that we use to represent dom in text
+so when the browser parses html document it creates a tree of objects in memory that we refer to as the dom
+we can also create this tree of objects programmatically using vanilla java script, so we don't necessarily need html, but html is far simple 
+- most of the attributes of html elements have a one to one mapping properties of dom objects, 
+there are however a few exceptions for example we have html attributes that don't have a representation in the dom 'the colspan, text' are 
+examples of that so when we parse that html markup and create an actual dom object of this td, that dom object doesn't have a property 
+called 'text' and that's why you get error 'can't bind text since it isn't a known property of td'    
+
+when you use property binding remember that you are binding to a dom object not html element, but in 99% of the cases this html attributes 
+and the dom have one to one mapping -->
+
+<input value="{{ inputText }}" (keyup.enter)="onKeyUp()" />
+<!-- this is also the same, because as we said before they are exactly the same -->
+<input [value]="inputText" (keyup.enter)="onKeyUp()" />
+<br>
+
+<button (click)="OnClick()">Click Here</button>

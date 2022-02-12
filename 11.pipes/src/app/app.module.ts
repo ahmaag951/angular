@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule
@@ -14,8 +16,3 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-/*
-we use pipes to format data
-built in pipes (uppercase, lowercase, decimal, currency, percent)
-*/

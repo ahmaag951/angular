@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 /*
 ngOnInit is a life cycle hook called by Angular2 to indicate that Angular is done creating the component.
-	it's called after the component is created.
+  it's called after the component is created.
   Mostly we use ngOnInit for all the initialization/declaration and avoid stuff to work in the constructor. 
   The	constructor should only be used to initialize class members but shouldn't do actual "work".
   there are other life cycle hooks like OnChanges ... and so on
@@ -20,9 +20,9 @@ export class AppComponent implements OnInit {
   }
 
   constructor() {
-    this.title = "title changed from constructor"    
-    
+    this.title = "title changed from constructor"
+
   }
 
-  title = 'this titile is changed by ahmad ezzat';
+  title = 'this title is changed by me';
 }

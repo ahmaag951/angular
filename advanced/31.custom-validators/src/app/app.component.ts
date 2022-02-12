@@ -11,19 +11,21 @@ export class AppComponent {
   form: FormGroup;
 
   constructor(private fb: FormBuilder) {
-
+    // if you didn't put these validators in array, it will validate the first custom validator and ignore the rest of them
     this.form = fb.group({
       email: ['ab c',
-        EmailValidators.cannotContainSpace,
-        EmailValidators.shouldBeUnique,
-        FankoshValidators.shouldBeFankoshy,
-        minValueValidator(6)
+        [
+          FankoshValidators.shouldBeFankoshy,
+          EmailValidators.cannotContainSpace,
+          EmailValidators.shouldBeUnique,
+          minLengthValidator(6)
+        ]
       ]
     });
   }
 
   onSave() {
-    console.log(this.form.value);
+    console.log(this.form);
   }
 }
 
@@ -60,14 +62,12 @@ export class EmailValidators {
 }
 
 // to send data with the validators
-export const minValueValidator = (min: number) => {
-  console.log('min: ', min);
+export const minLengthValidator = (min: number) => {
 
   return (control: AbstractControl) => {
-    var num = +control.value;
-    if (isNaN(num) || num < min) {
+    if ((control.value as string).length < min) {
       return {
-        minValue: { valid: false }
+        minValue: { minLength: false }
       };
     }
     return null;

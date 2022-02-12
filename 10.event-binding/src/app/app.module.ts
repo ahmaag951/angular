@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    // for the two way binding
+    // for the two way binding [(ngModel)]
     FormsModule
   ],
   providers: [],

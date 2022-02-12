@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by ahmad ezzat';
+  title = 'this title is changed by me';
   courses = [
     { id: 1, name: 'course1' },
     { id: 2, name: 'course2' },
@@ -37,6 +37,8 @@ export class AppComponent {
   }
 
   trackCourse(index, course) {
+    // if the course is exist and we have a course object, we return its id not the course itself, so the comparsion will be based on the id
     return course ? course.id : undefined;
+    // now if you inspect the page elements, you will not notice changing in the li in the list, because the list is not reloaded
   }
 }

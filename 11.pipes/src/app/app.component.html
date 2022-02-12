@@ -1,5 +1,9 @@
 <h2>Without Pipes</h2>
 
+
+<!-- we use pipes to format data
+built in pipes (uppercase, lowercase, decimal, currency, percent) -->
+
 {{ course.title }}
 <br> {{ course.rating }}
 <br> {{ course.students }}
@@ -19,4 +23,10 @@
 <!-- order by and filter are no longer exists as pipes in angular2, they were exist in angular js 
      they removed them because they are expensive operations -->
 
-     <!-- please see the video for custom pipes if you need -->
+     <!-- to create a custom pipe
+     1. create folder pipes and summary.pipe.ts file in it => go to that file
+     2. register the pipe in app.module in the declarations
+     
+     -->
+
+     {{ testCustomPipe | summary: 10 }}

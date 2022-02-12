@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by ahmad ezzat';
-  
+  title = 'this title is changed by me';
+
   // not empty courses list
   courses = [1, 2];
   // empty courses list

@@ -12098,11 +12098,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "F:\\CS\\ANGULAR\\0.samples\\advanced\\44.file-uploader\\Backend\\ImageUploader\\ImageUploader\\ImageUploader.csproj",
       "projectName": "ImageUploader",
       "projectPath": "F:\\CS\\ANGULAR\\0.samples\\advanced\\44.file-uploader\\Backend\\ImageUploader\\ImageUploader\\ImageUploader.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "F:\\CS\\ANGULAR\\0.samples\\advanced\\44.file-uploader\\Backend\\ImageUploader\\ImageUploader\\obj\\",
+=======
+      "projectUniqueName": "D:\\CS\\samples\\github\\angular\\advanced\\44.file-uploader\\Backend\\ImageUploader\\ImageUploader\\ImageUploader.csproj",
+      "projectName": "ImageUploader",
+      "projectPath": "D:\\CS\\samples\\github\\angular\\advanced\\44.file-uploader\\Backend\\ImageUploader\\ImageUploader\\ImageUploader.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\CS\\samples\\github\\angular\\advanced\\44.file-uploader\\Backend\\ImageUploader\\ImageUploader\\obj\\",
+>>>>>>> 6de16d719210176df7ba7b2a76bb01cd9c031301
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12160,7 +12168,11 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+>>>>>>> 6de16d719210176df7ba7b2a76bb01cd9c031301
       }
     }
   }

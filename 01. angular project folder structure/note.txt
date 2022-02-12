@@ -1,0 +1,32 @@
+- the minimum node js version to run angular is 6.9
+- npm => node package manager, helps us install 3rd libraries like 'angular cli'
+
+- e2e: where we write end to end tests.(automated tests that simulate a real user) like open a web page click links and click submit ... => so you can write code to open your app home page, insert some values and submit and test that.
+- node modules: to store the 3rd parties that the app rely on 
+- src => where you have your actual source code of the application, app folder => [module and 4 files for the component]
+- assets: where we store our static assets of our application (image files, text files, icons...)
+- main.ts => type script file => it's the starting point of our application => like the Main method in console applications
+ in it we are bootstrapping our main module which is the 'AppModule', so every things starts from there
+- polyfills: imports some scripts that are important for running angular, because the angular framework uses features of js that are not available in the current version of the js supported by most browsers, so this polyfills fill the gap between the two.
+- karma is a test runner for js code and karma.conf.js is a configuration file for it
+a static analysis tool for typescript code
+- angular uses a tool called web pack which is a build automation tool 
+it gets all our scripts and style sheets combines them and put them in bundles and then minifies that bundle (this is for optimization)
+the style sheets are also bundled in javascript bundles, the vendor bundle include all the third party libraries
+when you make any changes in any file 'html, css, ts', webpack automatically re-compiles your application and refresh your bundles 
+this is a feature webpack called Hot Module Replacement or reloading (HMR) and you don't even have to refresh your page.
+webpack automatically inject these bundles into index.html page, so if you view page source you will find only that bundles in the page, you can see the code in them and you can see your style sheets
+- app => every app has at least one module and one component
+- environments => where we store our configuration settings for different environments one file for the production called environment env.prod.ts and one file for the development environment called env.ts
+- favicon.ico => application icon
+- index.html => very simple html page that contains our angular application  and it has no references for scripts or style sheets
+- styles.css => the global styles for the application
+- test.ts => setting our test environment
+- .angular-cli.json => configuration file for angular cli, it's a standard configurations you don't have to worry about it for the most part 
+- .editorconfig => if you are working in a team environment, you want to make sure that all developers in the team use the same settings for their code editors, so this were you store the settings
+- .gitignore => for excluding a certain files and folders from your git repo
+- karma.conf.js => configuration file for karma (a test runner for js code)
+- package.json => an important file, basic settings like the app name and version, dependencies(which determines the libraries that your app depends upon (3rd parties)), devDependencies (libraries we need in order to develop this app (we don't need them to run the app on the production server, they are for the developer machine))
+- protractor.conf.js => a tool for running end to end tests for angular 
+- tsconfig.json => has a punch of settings for your ts compiler, so your ts compile looks at these settings and based on these settings it's going to compile your ts code into js that browsers can understand
+- tslint.js => includes a number of settings for the tslint (a static analysis tool for ts code, it checks your ts code for readability, maintainability and functionality errors)

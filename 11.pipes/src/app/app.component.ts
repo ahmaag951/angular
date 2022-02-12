@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by ahmad ezzat';
+  title = 'this title is changed by me';
 
   course = {
     title: "The Complete Angular Cource",
@@ -14,6 +14,8 @@ export class AppComponent {
     students: 30123,
     price: 190.95,
     releaseDate: new Date(2016, 3, 1)
-  }
+  };
+
+  testCustomPipe = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
 }

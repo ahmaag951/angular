@@ -1,0 +1,21 @@
+hello 
+<button class="btn btn-secondary m-2" (click)="add()">Add</button>
+<input  type="text" placeholder="Course" [(ngModel)]="inputVal">
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of courses$ | async; index as i;">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ item.payload.val() }}</td>
+        <button class="btn btn-primary m-2" (click)="edit(item.key)">Edit</button>
+        <button class="btn btn-warning" (click)="delete(item.key)">Delete</button>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,20 @@
+<div style="text-align: center">
+  <h1>
+    Welcome to {{ title }}!
+    <br> {{ "You can write expressions here " + testData }}
+    <br> {{ 1 + 1}}
+    <!-- and you can call methods-->
+    <br> {{ getData() }}
+  </h1>
+  <!-- this syntax {{ }} is called string interpolation -->
+</div>
+
+<ul>
+  <!-- this is called directives, we use directives to manipulate the dom -->
+  <!-- when you use a directive that modifies the structure of the dom you should put * before it -->
+
+  <li *ngFor="let item of coursesList">
+    {{ item }}
+
+  </li>
+</ul>

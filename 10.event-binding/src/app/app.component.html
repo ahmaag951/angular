@@ -1,19 +1,24 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <img width="300" alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
 
 <button (click)="onClick()">On Click</button>
 <button (click)="onClickWithEvent($event)">On Click With Event</button>
 
-<!-- if you want to get access to the event object -->
-
-<!-- please see the rest of the 'event handling video' for more information about event bubling
-     and $event.stopPropagation() -->
-
+<!-- $event is the standard dom event we see in vanilla javascript for the dom object(in this case, it's the button) 
+    the hierarchy of calling the events in the event dom tree is from down to top, so in the following example the call of onButtonClicked()
+    will be before the call of onDivClicked() ...> this is called 'event bubbling', the events bubbles up in the dom tree,
+    if you handled an event and you want to stop event bubbling use => $event.stopPropagation() -->
+<div (click)="onDivClicked($event)">
+  This is the div to test event bubbling
+  <button (click)="onButtonClicked($event)">
+    test event bubbling
+  </button>
+</div>
 <!-- this is called event filter -->
 <br>
 <input (keyup)="onKeyUp($event)" />
@@ -23,18 +28,18 @@
 
 <input (keyup.enter)="onKeyUpAndGetText($event)" />
 <!-- in angular there is another way to do that, this is called template variables 
-          this variable refrences this input field -->
+          this variable references this input field -->
 <input #MyInputName (keyup.enter)="onKeyUpAndGetTextWithTemplateVariables(MyInputName.value)" />
 <h2>Two Way Binding</h2>
 <!-- two way binding -->
 <!-- 1. you can write multiple statements --><br>
-
+<span>{{ textValue }}</span>
 <!-- this will change only when you click enter -->
 <input [value]="textValue" (keyup.enter)="textValue = $event.target.value; twoWayBinding1()" />
 <!-- 2. the two way binding syntax (banana in a box)  -->
 <input [(ngModel)]="textValue" (keyup.enter)="twoWayBinding1()" />
 <!-- instead of value we bind ngModel it's a directive and it's used to implement two way binding  
-     this is easier and shorter-->
+     this is easier and shorter -->
 <!-- an error will happen, "can't bind to ngModel" since it's not a known property of input 
-    because ngModel is definded in another module called forms, and you have to import it 
+    because ngModel is defined in another module called forms, and you have to import it 
     go to app.module and add the forms module into the imports -->

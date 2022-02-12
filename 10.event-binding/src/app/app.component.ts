@@ -6,37 +6,44 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this titile is changed by ahmad ezzat';
-  textValue = "the starting text value"
+  title = 'this title is changed by me';
+  textValue = 'the starting text value';
   onClick() {
-    alert('Button Clicked');
+    console.log('Button Clicked');
   }
+
   onClickWithEvent($event) {
-    alert('Please see the log console');
-    console.log($event)
+    console.log($event);
   }
 
   onKeyUp($event) {
     if ($event.keyCode === 13) // when Enter is clicked
-      alert('enter was clicked');
+      console.log('enter was clicked');
 
   }
 
   onKeyUpWithEventFilter() {
-    alert('enter was clicked');
+    console.log('enter was clicked');
   }
 
   onKeyUpAndGetText($event) {
-    alert('you wrote: ' + $event.target.value);
+    console.log('you wrote: ' + $event.target.value);
 
   }
   onKeyUpAndGetTextWithTemplateVariables(text) {
-    alert('you wrote: ' + text);
-
+    console.log('you wrote: ' + text);
   }
+
   twoWayBinding1(text) {
-    
-    alert("the textValue field = " + this.textValue);
+    console.log('the textValue field = ' + this.textValue);
   }
 
+  onButtonClicked($event) {
+    console.log('onButtonClicked', $event);
+    $event.stopPropagation();
+  }
+
+  onDivClicked($event) {
+    console.log('onDivClicked', $event);
+  }
 }
