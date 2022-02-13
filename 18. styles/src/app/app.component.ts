@@ -9,6 +9,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     button{
       background-color: green;
     }
+
     a{
       background-color: aqua
     }
