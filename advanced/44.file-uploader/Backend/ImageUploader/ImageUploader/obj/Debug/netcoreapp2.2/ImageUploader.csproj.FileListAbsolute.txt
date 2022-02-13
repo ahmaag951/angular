@@ -28,6 +28,8 @@ F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUpl
 F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.RazorTargetAssemblyInfo.cache
 F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.dll
 F:\CS\ANGULAR\0.samples\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.pdb
+<<<<<<< HEAD
+=======
 D:\CS\samples\github\angular\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\appsettings.Development.json
 D:\CS\samples\github\angular\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\appsettings.json
 D:\CS\samples\github\angular\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
@@ -45,3 +47,4 @@ D:\CS\samples\github\angular\advanced\44.file-uploader\Backend\ImageUploader\Ima
 D:\CS\samples\github\angular\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.dll
 D:\CS\samples\github\angular\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.pdb
 D:\CS\samples\github\angular\advanced\44.file-uploader\Backend\ImageUploader\ImageUploader\obj\Debug\netcoreapp2.2\ImageUploader.genruntimeconfig.cache
+>>>>>>> 6de16d719210176df7ba7b2a76bb01cd9c031301
