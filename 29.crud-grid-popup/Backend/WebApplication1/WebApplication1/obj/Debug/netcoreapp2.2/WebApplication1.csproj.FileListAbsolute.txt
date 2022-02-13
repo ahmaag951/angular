@@ -1,0 +1,44 @@
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.deps.json
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.json
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.dev.json
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.dll
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.pdb
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfoInputs.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfo.cs
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorTargetAssemblyInfo.cache
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.dll
+C:\Users\a.ezzat.APEXUNITED\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.pdb
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.deps.json
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.json
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.dev.json
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.dll
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.pdb
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CoreCompileInputs.cache
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfoInputs.cache
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfo.cs
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorTargetAssemblyInfo.cache
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.dll
+D:\samples\angular samples\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.pdb
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\appsettings.json
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.deps.json
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.json
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.dev.json
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.dll
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.pdb
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfoInputs.cache
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfo.cs
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorTargetAssemblyInfo.cache
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.dll
+F:\CS\ANGULAR\0.samples\0.need more work\sample\Backend\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.pdb
