@@ -1,0 +1,52 @@
+
+<!-- <app-test-ngmodel></app-test-ngmodel> -->
+<router-outlet></router-outlet>
+
+<form [formGroup]="form">
+
+    <input formControlName="email">
+    <input formControlName="email2">
+
+    <div formGroupName="address">
+        <input formControlName="street">
+        <input formControlName="avenue">
+    </div>
+    ==========================================================
+    <div formArrayName="countries">
+        <input formControlName="0">
+        <input formControlName="1">
+        <label>test</label>
+    </div>
+
+    <div formArrayName="countries" *ngFor="let item of form.value.countries; let i = index;">
+        <input [formControlName]="i">
+        <button (click)="removeCountries(i)">remove countries</button>
+
+    </div>
+    ==========================================================
+    <div formArrayName="countries2">
+        <div formGroupName="0">
+            <input formControlName="id">
+            <input formControlName="name">
+        </div>
+        <div formGroupName="1">
+            <input formControlName="id">
+            <input formControlName="name">
+        </div>
+    </div>
+
+    <div formArrayName="countries2" *ngFor="let item of form.get('countries2').controls; let i = index;">
+        <div [formGroupName]="i">
+            <input formControlName="id">
+            <input formControlName="name">
+            <button (click)="removeCountries2(i)">remove countries2</button>
+
+        </div>
+    </div>
+
+    <button (click)="addCountries()">add countries</button>
+    <button (click)="addCountries2()">add countries2</button>
+
+
+    <button (click)="onClick()">Submit</button>
+</form>

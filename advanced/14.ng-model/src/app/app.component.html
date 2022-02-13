@@ -1,0 +1,13 @@
+<!-- you can also do this with select (mat-select) -->
+<input ngModel #firstname>
+<!-- without ngModel you will not be able to bind the input with the 
+  template variable -->
+<input #temp>
+<input [(ngModel)]="lastname">
+
+<p>
+  {{ firstname.value }} -- {{ temp.value }} -- {{ lastname }}
+</p>
+
+<button (click)="onClick()">Click to change lastname from ts</button>
+<!-- https://angular.io/api/forms/NgModel#description -->
