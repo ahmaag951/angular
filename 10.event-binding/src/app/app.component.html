@@ -19,11 +19,10 @@
     test event bubbling
   </button>
 </div>
-<!-- this is called event filter -->
 <br>
 <input (keyup)="onKeyUp($event)" />
 <br>
-<!-- this method will be called only when we press enter -->
+<!-- this is called event filter, this method will be called only when we press enter -->
 <input (keyup.enter)="onKeyUpWithEventFilter()" />
 
 <input (keyup.enter)="onKeyUpAndGetText($event)" />
@@ -42,4 +41,4 @@
      this is easier and shorter -->
 <!-- an error will happen, "can't bind to ngModel" since it's not a known property of input 
     because ngModel is defined in another module called forms, and you have to import it 
-    go to app.module and add the forms module into the imports -->
+    go to app.module and add the FormsModule into the imports -->

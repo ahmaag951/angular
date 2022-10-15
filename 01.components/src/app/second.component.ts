@@ -4,6 +4,6 @@ import { Component } from "@angular/core";
     selector: 'Second',
     templateUrl: './second.component.html'
 })
-export class SecondComonent{
+export class SecondComponent{
     helloMessage = 'I am a simple hello message.'
 }

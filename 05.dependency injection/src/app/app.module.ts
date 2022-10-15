@@ -11,6 +11,7 @@ import { CoursesService } from './courses.service';
   imports: [
     BrowserModule
   ],
+  // what we put here in providers, we can inject it anywhere else
   providers: [
     CoursesService // angular will create a single instance of this service for the entire module
                   // for every one who wants to use it [singleton]

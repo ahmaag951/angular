@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { LogService } from './log.service';
 
+// Injectable means that this service depends on other services that need to be injected
 @Injectable({
   providedIn: 'root'
 })

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
-import { SecondComonent } from './Second.component';
+import { SecondComponent } from './Second.component';
 
 // the Angular Module: is a container for a group of related components
 // this is a decorator for this class to convert it to a module from the angular's point of view
@@ -13,7 +13,7 @@ import { SecondComonent } from './Second.component';
     AppComponent,
     // we added our component
     CoursesComponent,
-    SecondComonent
+    SecondComponent
   ],
   imports: [
     BrowserModule

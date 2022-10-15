@@ -32,5 +32,5 @@ export class AppComponent {
  * npm install
  * with this, npm looks at package.json and download all the dependencies in this machine
 
- * the last step is to import bootstrap in the main styles sheet or import it in angular.json styles array
+ * the last step is to import bootstrap in the main styles sheet (styles.css) or import it in angular.json styles array
  */
