@@ -8,7 +8,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     `
     button{
       background-color: green;
-    ,  standalone: false}
+    }
 
     a{
       background-color: aqua
@@ -27,6 +27,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
      */
   ],
   styleUrls: ['./app.component.css'],
+  standalone: false,
   /*
       please note that these styles will not leek outside this component
       so if you created a button outside this component it will not be affected with the styles in the component

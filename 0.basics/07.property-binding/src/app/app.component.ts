@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <h2>{{ title ,  standalone: false}}</h2>
+  <h2>{{ title }}</h2>
   <h2 [textContent]="title"></h2>
     
     using interpolation
@@ -11,7 +11,8 @@ import { Component } from '@angular/core';
     using property binding 
       <img [src]="imageUrl" />       
   `,
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  standalone: false
   /*
   behind the scene when angular compiles our templates, it translates these interpolations into what we call 
   'property binding', the property binding binds a property of the dom element like the src here to 
