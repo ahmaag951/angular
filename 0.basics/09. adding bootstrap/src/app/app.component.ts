@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'this title is changed by me';
   IsActive = true;
@@ -34,3 +34,4 @@ export class AppComponent {
 
  * the last step is to import bootstrap in the main styles sheet (styles.css) or import it in angular.json styles array
  */
+

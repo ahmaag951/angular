@@ -5,7 +5,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   selector: 'my-grid',
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.css']
-})
+,  standalone: false})
 export class GridComponent {
   // the component can have input and output
   // the input is used to pass data or state to the component
@@ -37,3 +37,4 @@ export class GridComponent {
   }
 
 }
+

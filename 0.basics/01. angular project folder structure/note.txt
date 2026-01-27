@@ -30,3 +30,29 @@ webpack automatically inject these bundles into index.html page, so if you view 
 - protractor.conf.js => a tool for running end to end tests for angular 
 - tsconfig.json => has a punch of settings for your ts compiler, so your ts compile looks at these settings and based on these settings it's going to compile your ts code into js that browsers can understand
 - tslint.js => includes a number of settings for the tslint (a static analysis tool for ts code, it checks your ts code for readability, maintainability and functionality errors)
+
+RECENT UPDATES (Angular 15+):
+
+- Node.js Version: Minimum is now Node.js 18.13+ (previously was 6.9)
+
+- angular.json: The configuration file .angular-cli.json has been replaced by angular.json
+
+- TSLint Deprecated: TSLint has been officially deprecated (2019) and replaced by ESLint. Use .eslintrc.json instead of tslint.json
+
+- Karma Deprecated: Karma is being phased out in favor of Jest or Web Test Runner for unit testing
+
+- Protractor Deprecated: Protractor was officially deprecated. Use Cypress, Playwright, or WebdriverIO for e2e testing instead
+
+- Standalone Components (v14+): Apps no longer require NgModules. You can build entire applications using standalone components without modules
+
+- Polyfills: Now optional/minimal. Modern browsers support most features that previously required polyfills. The polyfills.ts file is often removed or very minimal
+
+- Build System: Webpack is being replaced by esbuild and Vite for much faster builds (experimental in v16, default in v17+)
+
+- Browserslist: Now included in projects to define which browsers your application supports
+
+- Strict Mode: TypeScript strict mode is now enabled by default in new Angular projects
+
+- Environment Files: The environments/ folder pattern still works but Angular now also supports build-time replacements and runtime configuration options
+
+- Hot Module Replacement (HMR): Still available but with improved performance through new build tools

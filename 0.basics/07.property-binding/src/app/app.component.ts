@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <h2>{{ title }}</h2>
+  <h2>{{ title ,  standalone: false}}</h2>
   <h2 [textContent]="title"></h2>
     
     using interpolation
@@ -34,3 +34,4 @@ export class AppComponent {
   title = 'this title is changed by me';
   imageUrl = "favicon.ico";
 }
+

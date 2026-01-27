@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'this title is changed by me';
   courses = [
@@ -42,3 +42,4 @@ export class AppComponent {
     // now if you inspect the page elements, you will not notice changing in the li in the list, because the list is not reloaded
   }
 }
+

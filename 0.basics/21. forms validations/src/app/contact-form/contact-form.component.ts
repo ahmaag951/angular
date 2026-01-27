@@ -4,7 +4,7 @@ import { Component, NgModule } from '@angular/core';
   selector: 'contact-form',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.css']
-})
+,  standalone: false})
 export class ContactFormComponent {
 
   log(data) {
@@ -21,3 +21,4 @@ export class ContactFormComponent {
   }
 
 }
+

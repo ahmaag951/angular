@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'bootstrap-panel',
   templateUrl: './bootstrap-panel.component.html',
   styleUrls: ['./bootstrap-panel.component.css']
-})
+,  standalone: false})
 export class BootstrapPanelComponent implements OnInit {
 
   constructor() { }
@@ -13,3 +13,4 @@ export class BootstrapPanelComponent implements OnInit {
   }
 
 }
+

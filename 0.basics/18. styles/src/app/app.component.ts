@@ -8,7 +8,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     `
     button{
       background-color: green;
-    }
+    ,  standalone: false}
 
     a{
       background-color: aqua
@@ -52,3 +52,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class AppComponent {
   title = 'this title is changed by me';
 }
+
