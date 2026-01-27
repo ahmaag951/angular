@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
     selector: 'Courses', // like the css selectors, for example when you want to call a div with specific
     // id you call it like this '#div', or '.div' or 'div'. here in our case this is
     // the way you tell the component how it will be called, like this '<Courses>'
-    template: '<h2>Courses[this is a header we added from component]</h2>' 
+    template: '<h2>Courses[this is a header we added from component]</h2>',
+    standalone: false 
     // it's the html markup we want to be rendered for this component,
     // and for simplicity we use the <h2>    
     // this is a basic component in angular
