@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { TestComponentComponent } from './test-component/test-component.component';
+import { AbcComponentComponent } from './abc-component/abc-component.component';
 
 /*
 there are two problems in creating component with the previous approach (manually)
@@ -25,7 +26,8 @@ now you can use this component where you want in any html markup
   declarations: [
     AppComponent,
     CoursesComponent,
-    TestComponentComponent
+    TestComponentComponent,
+    AbcComponentComponent
   ],
   imports: [
     BrowserModule
