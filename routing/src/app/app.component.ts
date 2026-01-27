@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'this title is changed by me';
+  title = 'custom title';
 
   courseNumber = 2;
 

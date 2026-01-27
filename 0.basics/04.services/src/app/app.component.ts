@@ -7,7 +7,7 @@ import { CoursesService } from './courses.service';
   styleUrls: ['./app.component.css']
 ,  standalone: false})
 export class AppComponent {
-  title = 'this title is changed by me';
+  title = 'custom title';
   courses;
 
   // if you needed data from http service [end point], and you called it here direct, this will make 

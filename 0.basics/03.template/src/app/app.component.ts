@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 ,  standalone: false})
 export class AppComponent {
-  title = 'this title is changed by me';
+  title = 'custom title';
   testData = "Simple Data";
   coursesList = ["course1", "course2", "course3"];
 

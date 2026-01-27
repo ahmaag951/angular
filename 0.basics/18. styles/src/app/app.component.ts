@@ -50,6 +50,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'this title is changed by me';
+  title = 'custom title';
 }
 

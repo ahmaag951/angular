@@ -31,7 +31,7 @@ and you will notice that it didn't changed in the component
   */
 })
 export class AppComponent {
-  title = 'this title is changed by me';
+  title = 'custom title';
   imageUrl = "favicon.ico";
 }
 

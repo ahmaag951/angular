@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class AppComponent {
-  title = 'this title is changed by me';
+  title = 'custom title';
   simpleString = 'I am a simple string';
 }
