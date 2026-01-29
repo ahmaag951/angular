@@ -8,12 +8,12 @@ import { Component, NgModule } from '@angular/core';
 })
 export class ContactFormComponent {
 
-  log(data) {
+  log(data: any) {
     console.log(data);
     
   }
 
-  submit(f){
+  submit(f: any){
     alert(f.valid)
     // f.value has a json object that holds all the values in this form
     // so you can send that to persistance to save it into the db for example

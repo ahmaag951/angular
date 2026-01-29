@@ -34,7 +34,7 @@
 <!-- 1. you can write multiple statements --><br>
 <span>{{ textValue }}</span>
 <!-- this will change only when you click enter -->
-<input [value]="textValue" (keyup.enter)="textValue = $event.target.value; twoWayBinding1()" />
+<input [value]="textValue" (keyup.enter)="textValue = getInputValue($event); twoWayBinding1()" />
 <!-- 2. the two way binding syntax (banana in a box)  -->
 <input [(ngModel)]="textValue" (keyup.enter)="twoWayBinding1()" />
 <!-- instead of value we bind ngModel it's a directive and it's used to implement two way binding  

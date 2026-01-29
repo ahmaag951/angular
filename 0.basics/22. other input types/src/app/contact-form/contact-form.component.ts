@@ -8,7 +8,7 @@ import { Component, NgModule } from '@angular/core';
 })
 export class ContactFormComponent {
 
-  log(data) {
+  log(data: any) {
     console.log(data);
     
   }

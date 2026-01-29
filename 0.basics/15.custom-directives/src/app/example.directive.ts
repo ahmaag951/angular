@@ -1,10 +1,11 @@
 import { Directive, ElementRef, Renderer2, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appExample]'
+  selector: '[appExample]',
+  standalone: false
 })
 export class ExampleDirective {
-  @Input() defaultColor;
+  @Input() defaultColor: any;
   // we created this element ref so we can access the native element that uses our directive
   constructor(elementRef: ElementRef, renderer: Renderer2) {
     console.log(elementRef);

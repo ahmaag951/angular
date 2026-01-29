@@ -9,11 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'hello-world';
 
-  myOnOpen(eventArgs){
+  myOnOpen(eventArgs: any){
     console.log('open: ', eventArgs);
   }
 
-  myOnClose(event){
+  myOnClose(event: any){
     console.log('close: ', event);
   }
 }

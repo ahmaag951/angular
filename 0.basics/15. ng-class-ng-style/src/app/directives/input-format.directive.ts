@@ -1,7 +1,8 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[myCustomDirective]'
+  selector: '[myCustomDirective]',
+  standalone: false
 })
 export class InputFormatDirective {
 
@@ -9,10 +10,10 @@ export class InputFormatDirective {
   constructor(private el: ElementRef) { }
 
   @Input('myCustomDirective')
-  myInput;
+  myInput: any;
 
   @Input()
-  mySecondInput;
+  mySecondInput: any;
 
   // when we focus on our input field, this method will be called
   // host listener decorator alows us to subscribe to the events raised from the dom elements, you just give it the name of the dom event

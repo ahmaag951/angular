@@ -39,10 +39,10 @@
       type="text" 
       class="form-control">
     <div *ngIf="minMaxInput.touched && minMaxInput.invalid" class="alert alert-danger">
-      <div *ngIf="minMaxInput.errors.required">The Input is required</div>
-      <div *ngIf="minMaxInput.errors.maxlength">The Input has max length minMaxInput.errors.maxlength  {{ minMaxInput.errors.maxlength.requiredLength}}</div>
-      <div *ngIf="minMaxInput.errors.minlength">The Input has min length  {{ minMaxInput.errors.minlength.requiredLength }}</div>
-      <div *ngIf="minMaxInput.errors.pattern">The Input should match the pattern 'banana'</div>
+      <div *ngIf="minMaxInput.errors?.['required']">The Input is required</div>
+      <div *ngIf="minMaxInput.errors?.['maxlength']">The Input has max length minMaxInput.errors.maxlength  {{ minMaxInput.errors['maxlength'].requiredLength}}</div>
+      <div *ngIf="minMaxInput.errors?.['minlength']">The Input has min length  {{ minMaxInput.errors['minlength'].requiredLength }}</div>
+      <div *ngIf="minMaxInput.errors?.['pattern']">The Input should match the pattern 'banana'</div>
     </div>
     <!-- if you want to make validation with regular expression, you can use something called 'pattern', it's
     exactly like minlength="3" => pattern="...regx" -->

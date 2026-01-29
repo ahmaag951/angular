@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-    name: 'summary' // the keyword that we want to use in our html
+    name: 'summary',
+    standalone: false
 })
 export class SummaryPipe implements PipeTransform {
     // you can pass parameters as you want because the transform has ...args array

@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = { data: 'hello-world' };
   test = { data: null };
-  test2 = {};
+  test2: any = {};
   // tslint:disable-next-line: whitespace
   abc = this.title?.data;
   abcd = this.test?.data;

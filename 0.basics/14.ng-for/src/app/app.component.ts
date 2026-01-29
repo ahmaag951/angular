@@ -14,18 +14,18 @@ export class AppComponent {
     { id: 3, name: 'course3' },
   ];
 
-  courses2;
+  courses2: any;
 
   onClick() {
     this.courses.push({ id: 4, name: 'course4' });
   }
 
-  onRemove(course) {
+  onRemove(course: any) {
     let index = this.courses.indexOf(course);
     this.courses.splice(index, 1);
   }
 
-  onEdit(course) {
+  onEdit(course: any) {
     course.name = 'some new name';
   }
 
@@ -37,7 +37,7 @@ export class AppComponent {
     ];
   }
 
-  trackCourse(index, course) {
+  trackCourse(index: any, course: any) {
     // if the course is exist and we have a course object, we return its id not the course itself, so the comparsion will be based on the id
     return course ? course.id : undefined;
     // now if you inspect the page elements, you will not notice changing in the li in the list, because the list is not reloaded
