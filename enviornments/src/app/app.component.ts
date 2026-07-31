@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 // make sure to always import from enviornment not enviornment.prod and let the 
 // angular cli choose from the enviornement he want.
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',

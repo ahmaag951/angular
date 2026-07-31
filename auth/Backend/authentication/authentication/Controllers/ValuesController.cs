@@ -17,7 +17,7 @@ namespace authentication.Controllers
         [HttpPost]
         public ActionResult<LoginDto> Login()
         {
-            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("verySecreteComplexKey"));
+            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("verySecreteComplexKey!!1234567890"));
             var signInCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
             var tokenOptions = new JwtSecurityToken(

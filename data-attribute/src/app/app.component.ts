@@ -13,7 +13,7 @@ export class AppComponent {
     { id: 3, name: "jhi" },
   ];
 
-  showDetails(animalType: HTMLInputElement) {
+  showDetails(animalType: HTMLElement) {
     console.log('show details');
 
     console.log(animalType.getAttribute('data-animal-type'));

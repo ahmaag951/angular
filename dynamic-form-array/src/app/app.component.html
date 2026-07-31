@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div formArrayName="countries2" *ngFor="let item of form.get('countries2').controls; let i = index;">
+    <div formArrayName="countries2" *ngFor="let item of countries2Array.controls; let i = index;">
         <div [formGroupName]="i">
             <input formControlName="id">
             <input formControlName="name">

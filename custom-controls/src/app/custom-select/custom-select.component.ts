@@ -5,17 +5,18 @@ import { Component, OnInit, forwardRef, Input } from '@angular/core';
   selector: 'app-custom-select',
   templateUrl: './custom-select.component.html',
   styleUrls: ['./custom-select.component.css'],
+  standalone: false,
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => CustomSelectComponent),
       multi: true
-    ,  standalone: false}
+    }
   ]
 })
 export class CustomSelectComponent implements OnInit {
   val = '';
-  @Input() cars;
+  @Input() cars: any;
 
   constructor() {
 
@@ -35,11 +36,11 @@ export class CustomSelectComponent implements OnInit {
     this.onTouched = fn;
   }
 
-  writeValue(value) {
+  writeValue(value: any) {
     this.value = value;
   }
 
-  set value(val) {
+  set value(val: any) {
     if (val !== undefined && val !== this.val) {
       this.val = val;
       this.onChange(val);

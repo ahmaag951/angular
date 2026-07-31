@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, RequestOptions, Headers } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, pipe } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
@@ -9,16 +9,16 @@ import { catchError, map, tap } from 'rxjs/operators';
   styleUrls: ['./countries.component.css']
 ,  standalone: false})
 export class CountriesComponent implements OnInit {
-  countries: country[];
-  countryNameInput;
-  options = new RequestOptions({ headers: new Headers({ 'Content-Type': 'application/json' }) })
+  countries: country[] = [];
+  countryNameInput: any;
+  options = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     
-    http.get('http://localhost:11217/api/Countries/GetCountries')
+    http.get<country[]>('http://localhost:11217/api/Countries/GetCountries')
       .subscribe(response => {
-        console.log(response.json());
-        this.countries = response.json();
+        console.log(response);
+        this.countries = response;
       }
       );
     // we are subscribing to this observable, so when the data is ready we will be notified        
@@ -30,11 +30,10 @@ export class CountriesComponent implements OnInit {
     let country: country = { CountryName: countryInput.value, CountryIdPk: 0, CountryLanguage: '' }
     
     
-    this.http.post("http://localhost:11217/api/Countries/PostCountry", JSON.stringify(country), this.options)
+    this.http.post<country>("http://localhost:11217/api/Countries/PostCountry", JSON.stringify(country), this.options)
     .subscribe(response=>{
-      let newCountry = response.json();
-      this.countries.push(newCountry);
-      console.log(response.json());
+      this.countries.push(response);
+      console.log(response);
       countryInput.value = '';
     });
   }
@@ -46,7 +45,7 @@ export class CountriesComponent implements OnInit {
     // updates only a few properties, but patch is not widely supported, but it's useful in the performance
     this.http.put("http://localhost:11217/api/Countries/PutCountry/" + country.CountryIdPk, 
     JSON.stringify(country), this.options)
-    .subscribe(response =>{
+    .subscribe((response: any) =>{
       console.log(response);
       
     });
@@ -54,7 +53,7 @@ export class CountriesComponent implements OnInit {
 
   Delete(country: country){
     this.http.delete("http://localhost:11217/api/Countries/DeleteCountry/" + country.CountryIdPk)
-    .subscribe(response =>{
+    .subscribe((response: any) =>{
       let index = this.countries.indexOf(country);
       this.countries.splice(index, 1);
       

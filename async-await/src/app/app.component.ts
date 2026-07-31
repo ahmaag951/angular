@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import 'rxjs/add/operator/toPromise';
 
 
 @Component({
@@ -93,7 +92,7 @@ export class AppComponent implements OnInit {
 
   }
 
-  callback1(str: string, callback) {
+  callback1(str: string, callback: any) {
     console.log('callback1', str);
     callback();
   }
@@ -160,6 +159,6 @@ export class AppComponent implements OnInit {
   }
 
   title = 'hello-world';
-  list: string[];
+  list: string[] = [];
 }
 

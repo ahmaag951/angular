@@ -8,12 +8,13 @@ ControlValueAccessor is an INTERFACE that acts as a bridge between the Angular f
   selector: 'app-custom-input',
   templateUrl: './custom-input.component.html',
   styleUrls: ['./custom-input.component.css'],
+  standalone: false,
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => CustomInputComponent),
       multi: true
-    ,  standalone: false}
+    }
   ]
 })
 export class CustomInputComponent implements OnInit {
@@ -26,7 +27,7 @@ export class CustomInputComponent implements OnInit {
   onChange: any = () => { };
   onTouched: any = () => { };
 
-  set value(val) { // this value is updated by programatic changes
+  set value(val: any) { // this value is updated by programatic changes
     if (val !== undefined && this.val !== val) {
       this.val = val;
       this.onChange(val);

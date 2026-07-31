@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject } from '@angular/fire/database';
+import { AngularFireDatabase, AngularFireObject } from '@angular/fire/compat/database';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -24,7 +24,7 @@ export class AppComponent {
     this.db.list(this.dbPath).push(this.inputVal);
     this.inputVal = '';
   }
-  edit(key) {
+  edit(key: string) {
     if (this.inputVal === '') {
       return;
     }
@@ -33,7 +33,7 @@ export class AppComponent {
     this.db.object(this.dbPath + key).set(this.inputVal);
     this.inputVal = '';
   }
-  delete(key) {
+  delete(key: string) {
     this.db.object(this.dbPath + key).remove();
   }
 }

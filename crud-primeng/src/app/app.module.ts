@@ -7,8 +7,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/table';
 import { FormsModule } from '@angular/forms';
-import { AngularFireModule } from '@angular/fire';
-import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 import {ButtonModule} from 'primeng/button';
 
 @NgModule({

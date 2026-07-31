@@ -34,14 +34,14 @@ export class AppComponent {
     console.log(this.form.value.countries);
     console.log(this.form.value.countries2);
 
-    console.log((this.form.controls.countries as FormArray).controls);
+    console.log((this.form.controls['countries'] as FormArray).controls);
 
     console.log((this.form.get('countries') as FormArray).controls);
 
   }
 
   addCountries() {
-    let array = this.form.controls.countries as FormArray;
+    let array = this.form.controls['countries'] as FormArray;
     array.push(this.fb.control(['new country']));
   }
 
@@ -50,13 +50,17 @@ export class AppComponent {
     array.push(this.fb.group({ id: 3, name: 'new country name' }));
   }
 
-  removeCountries(index) {
-    let array = this.form.controls.countries as FormArray;
+  removeCountries(index: number) {
+    let array = this.form.controls['countries'] as FormArray;
     array.removeAt(index);
   }
 
-  removeCountries2(index) {
-    let array = this.form.controls.countries2 as FormArray;
+  get countries2Array(): FormArray {
+    return this.form.get('countries2') as FormArray;
+  }
+
+  removeCountries2(index: number) {
+    let array = this.form.controls['countries2'] as FormArray;
     array.removeAt(index);
   }
 }

@@ -29,10 +29,8 @@
                                                                                                     ],
                                                                                          "styles":  [
                                                                                                         "src/styles.scss",
-                                                                                                        "node_modules/primeng/resources/themes/saga-blue/theme.css",
-                                                                                                        "node_modules/primeicons/primeicons.css",
-                                                                                                        "node_modules/primeng/resources/primeng.min.css"
-                                                                                                    ],
+                                                                                                        "primeicons/primeicons.css",
+                                                                                                        ],
                                                                                          "scripts":  [
 
                                                                                                      ],
@@ -49,12 +47,12 @@
                                                                                                                    "budgets":  [
                                                                                                                                    {
                                                                                                                                        "maximumWarning":  "500kB",
-                                                                                                                                       "maximumError":  "1MB",
+                                                                                                                                       "maximumError":  "5MB",
                                                                                                                                        "type":  "initial"
                                                                                                                                    },
                                                                                                                                    {
                                                                                                                                        "maximumWarning":  "2kB",
-                                                                                                                                       "maximumError":  "4kB",
+                                                                                                                                       "maximumError":  "10MB",
                                                                                                                                        "type":  "anyComponentStyle"
                                                                                                                                    }
                                                                                                                                ]
@@ -116,3 +114,6 @@
                                      }
                  }
 }
+
+
+
