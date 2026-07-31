@@ -20,6 +20,7 @@
         "@angular/platform-browser": "^19.0.0",
         "@angular/platform-browser-dynamic": "^19.0.0",
         "@angular/router": "^19.0.0",
+        "@primeuix/themes": "^3.0.0",
         "firebase": "^12.17.0",
         "primeicons": "^8.0.0",
         "primeng": "^19.1.4",

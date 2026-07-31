@@ -16,20 +16,20 @@ export abstract class HttpService {
   constructor(private http: HttpClient) {
   }
   
-  get(url){
+  get(url: string){
     
     return this.http.get(this.serverUrl + this.baseUrl + url);
   }
 
-  post(url, data){
+  post(url: string, data: any){
     return this.http.post(this.serverUrl + this.baseUrl + url, data, httpOptions);
   }
 
-  put(url, data){
+  put(url: string, data: any){
     return this.http.put(this.serverUrl + this.baseUrl + url, data, httpOptions);
   }
 
-  delete(url){
+  delete(url: string){
     return this.http.delete(this.serverUrl + this.baseUrl + url);
   }
 }

@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 ,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
-  val: number;
-  value: Date;
+  val: number = 0;
+  value: Date = new Date();
 
 }
 

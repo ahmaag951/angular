@@ -11,6 +11,6 @@ const _counterReducer = createReducer(
   on(reset, (state) => 0)
 );
 
-export function counterReducer(state, action) {
+export function counterReducer(state: any, action: any) {
     return _counterReducer(state, action);
 }

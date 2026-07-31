@@ -7,9 +7,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/table';
 import { FormsModule } from '@angular/forms';
-import { AngularFireModule } from '@angular/fire/compat';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import {ButtonModule} from 'primeng/button';
+import { providePrimeNG } from 'primeng/config';
+import Aura from '@primeuix/themes/aura';
 
 @NgModule({
   declarations: [
@@ -23,9 +26,12 @@ import {ButtonModule} from 'primeng/button';
     TableModule,
     ButtonModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
-  providers: [],
+  providers: [
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideDatabase(() => getDatabase()),
+    providePrimeNG({ theme: { preset: Aura } }),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

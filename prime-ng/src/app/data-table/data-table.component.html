@@ -4,7 +4,7 @@
         this is the greate caption of china
         <!--  Available match modes are 
             "startsWith", "contains", "endsWith", "equals", "notEquals", "in", "lt", "lte", "gt" and "gte". -->
-        <input placeholder="global filter" (input)="mytable.filterGlobal($event.target.value, 'contains')">
+        <input placeholder="global filter" (input)="mytable.filterGlobal($any($event.target).value, 'contains')">
     </ng-template>
     <ng-template pTemplate="header" let-columns>
         <tr>
@@ -18,7 +18,7 @@
             <th></th>
             <th *ngFor="let col of columns" [ngSwitch]="col.filterMode">
                 <input pInputText *ngSwitchCase="FilterMode.text" [placeholder]="col.header + ' search'"
-                    (input)="mytable.filter($event.target.value, col.field, col.filterMatchMode)">
+                    (input)="mytable.filter($any($event.target).value, col.field, col.filterMatchMode)">
                 <!-- <p-dropdown *ngSwitchCase="FilterMode.select" [options]="brands"
                     (onChange)="mytable.filter($event.value, col.field, 'equals')"></p-dropdown> -->
             </th>

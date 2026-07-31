@@ -1,41 +1,41 @@
-import { Component, OnDestroy } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject } from '@angular/fire/compat/database';
+import { Component } from '@angular/core';
+import { Database, list, ref, push, set, remove } from '@angular/fire/database';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-,  standalone: false})
+  styleUrls: ['./app.component.scss'],
+  standalone: false
+})
 export class AppComponent {
   // this is the link to setup primeng https://primefaces.org/primeng/showcase/#/setup
-  courses$: Observable<any>;
+  courses$: Observable<{ key: string | null; value: any }[]>;
   dbPath = '/Courses/';
-
   inputVal = '';
 
-  constructor(private db: AngularFireDatabase) {
-    this.courses$ = db.list(this.dbPath).snapshotChanges();
+  constructor(private db: Database) {
+    this.courses$ = list(ref(db, this.dbPath)).pipe(
+      map(changes => changes.map(c => ({ key: c.snapshot.key, value: c.snapshot.val() })))
+    );
   }
 
   add() {
-    if (this.inputVal === '') {
-      return;
-    }
-    this.db.list(this.dbPath).push(this.inputVal);
+    if (this.inputVal === '') return;
+    push(ref(this.db, this.dbPath), this.inputVal);
     this.inputVal = '';
   }
-  edit(key: string) {
-    if (this.inputVal === '') {
-      return;
-    }
-    console.log(this.inputVal, key);
 
-    this.db.object(this.dbPath + key).set(this.inputVal);
+  edit(key: string | null) {
+    if (this.inputVal === '' || !key) return;
+    set(ref(this.db, this.dbPath + key), this.inputVal);
     this.inputVal = '';
   }
-  delete(key: string) {
-    this.db.object(this.dbPath + key).remove();
+
+  delete(key: string | null) {
+    if (!key) return;
+    remove(ref(this.db, this.dbPath + key));
   }
 }
 

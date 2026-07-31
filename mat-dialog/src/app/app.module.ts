@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CountryComponent } from './country/country.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatDialogModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,6 @@ import { MatDialogModule } from '@angular/material';
     MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [CountryComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

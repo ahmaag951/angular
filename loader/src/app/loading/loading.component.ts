@@ -9,8 +9,10 @@ import { LoaderService } from '../loader.service';
 ,  standalone: false})
 export class LoadingComponent implements OnInit {
 
-  isLoading: Subject<boolean> = this.loaderService.isLoading;
-  constructor(private loaderService: LoaderService) { }
+  isLoading: Subject<boolean>;
+  constructor(private loaderService: LoaderService) {
+    this.isLoading = this.loaderService.isLoading;
+  }
 
   ngOnInit(): void {
   }

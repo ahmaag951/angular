@@ -29,7 +29,7 @@ export class CoursesComponent implements OnInit {
       // has to check if there is a specefic param
 
       // to convert a string to number just put + before it
-      let id: number = +params.get('id');
+      let id: number = +(params.get('id') ?? 0);
       console.log(id);
       // they are observables because angular will not destroy the component and recreate it
       // because sometimes you don't need that, for example when you in a page and you load

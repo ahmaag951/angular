@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 ,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
-  countries;
+  countries: any;
 
   constructor(
     private dataService: DataService) {

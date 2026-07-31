@@ -11,7 +11,7 @@ import {map, startWith} from 'rxjs/operators';
 export class AppComponent implements OnInit {
   myControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
-  filteredOptions: Observable<string[]>;
+  filteredOptions: Observable<string[]> = new Observable<string[]>();
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges

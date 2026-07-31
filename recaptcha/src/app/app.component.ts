@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'hello-world';
 
-  public resolved(captchaResponse: string) {
+  public resolved(captchaResponse: string | null) {
     console.log('resolved captcha response', captchaResponse);
   }
 }

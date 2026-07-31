@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface Car {
-  vin;
-  year;
-  brand;
-  color;
+  vin: any;
+  year: any;
+  brand: any;
+  color: any;
 }
 
 export enum FilterMode {
@@ -53,7 +53,7 @@ export class DataTableComponent implements OnInit {
   ngOnInit() {
   }
 
-  customSort(event) {
+  customSort(event: any) {
     console.log(event);
 
   }

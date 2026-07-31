@@ -17,7 +17,7 @@ export class AppComponent {
   // and edit the rules, or go to cloud firestore console => in firestore database
 
   displayedColumns: string[] = ['name', 'actions'];
-  dataSource;
+  dataSource: any;
 
   inputVal = '';
 
@@ -38,7 +38,7 @@ export class AppComponent {
     // this.db.list(this.dbPath).push(this.inputVal);
     // this.inputVal = '';
   }
-  edit(key) {
+  edit(key: any) {
     // if (this.inputVal === '') {
     //   return;
     // }
@@ -47,7 +47,7 @@ export class AppComponent {
     // this.db.object(this.dbPath + key).set(this.inputVal);
     // this.inputVal = '';
   }
-  delete(key) {
+  delete(key: any) {
     // this.db.object(this.dbPath + key).remove();
   }
 

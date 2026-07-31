@@ -6,7 +6,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
   styleUrls: ['./country.component.css']
 ,  standalone: false})
 export class CountryComponent implements OnChanges, OnInit {
-  @Input() name;
+  @Input() name: any;
 
   ngOnChanges() {
     console.log('1.ngOnChanges ', this.name);

@@ -11,6 +11,8 @@ export class AppComponent {
 
   title = 'hello-world';
   lastname = 'initial last name';
+  test: any;
+  test2: any;
 
   onClick() {
 
