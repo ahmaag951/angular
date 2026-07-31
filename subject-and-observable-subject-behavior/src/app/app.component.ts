@@ -23,7 +23,7 @@ const myBehaviorSubject = new BehaviorSubject(99999);
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent implements OnInit {
   title = 'hello-world';
   ngOnInit() {
@@ -71,3 +71,4 @@ export class AppComponent implements OnInit {
   }
 
 }
+

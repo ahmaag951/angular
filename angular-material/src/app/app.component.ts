@@ -1,6 +1,6 @@
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { FormControl } from '@angular/forms';
 import { ConditionalExpr } from '@angular/compiler';
 
@@ -8,7 +8,7 @@ import { ConditionalExpr } from '@angular/compiler';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'angular-material-demo';
   isChecked = true;
@@ -43,7 +43,7 @@ export class AppComponent {
     }, 4000);
   }
 
-  onChange($event) {
+  onChange($event: any) {
     console.log($event);
     this.isChecked = $event.checked;
   }
@@ -54,7 +54,7 @@ export class AppComponent {
       data: { animal: this.animal }
     });
 
-    dialogRef.afterClosed().subscribe(result =>{
+    dialogRef.afterClosed().subscribe((result: any) =>{
       this.animal = result;
     });
   }
@@ -88,3 +88,4 @@ export class AppComponent {
     module you want to use it in like app module here
   */
 }
+

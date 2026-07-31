@@ -10,7 +10,7 @@ import { Component, OnInit, forwardRef, Input } from '@angular/core';
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => CustomSelectComponent),
       multi: true
-    }
+    ,  standalone: false}
   ]
 })
 export class CustomSelectComponent implements OnInit {
@@ -47,3 +47,4 @@ export class CustomSelectComponent implements OnInit {
     }
   }
 }
+

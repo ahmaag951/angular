@@ -17,7 +17,6 @@ import { StepperComponent } from './stepper/stepper.component';
   declarations: [
     AppComponent,
     MyDialogComponent,
-    TableComponent,
     Table2Component,
     StepperComponent
   ],
@@ -27,14 +26,10 @@ import { StepperComponent } from './stepper/stepper.component';
     FormsModule,
     AppRoutingModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TableComponent
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  // here we add the components that added dynamically
-  // that they are used in popup and not used anywhere else in the app
-  // so the app will not know anything about them unless they are here
-  // please see the app-routing-module file
-  entryComponents: [MyDialogComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

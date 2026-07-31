@@ -6,7 +6,7 @@ import { LoaderService } from '../loader.service';
   selector: 'app-loading',
   templateUrl: './loading.component.html',
   styleUrls: ['./loading.component.scss']
-})
+,  standalone: false})
 export class LoadingComponent implements OnInit {
 
   isLoading: Subject<boolean> = this.loaderService.isLoading;
@@ -16,3 +16,4 @@ export class LoadingComponent implements OnInit {
   }
 
 }
+

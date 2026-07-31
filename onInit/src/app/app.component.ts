@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 /*
 ngOnInit is a life cycle hook called by Angular2 to indicate that Angular is done creating the component.
   it's called after the component is created.
@@ -26,3 +26,4 @@ export class AppComponent implements OnInit {
 
   title = 'custom title';
 }
+

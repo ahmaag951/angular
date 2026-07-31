@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-second',
   templateUrl: './second.component.html',
   styleUrls: ['./second.component.scss']
-})
+,  standalone: false})
 export class SecondComponent implements OnInit {
 
   constructor() {
@@ -18,3 +18,4 @@ export class SecondComponent implements OnInit {
   }
 
 }
+

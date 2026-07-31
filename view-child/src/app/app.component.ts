@@ -5,7 +5,7 @@ import { SubComponent } from './sub/sub.component';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent implements AfterViewInit {
   title = 'hello-world';
 
@@ -19,3 +19,4 @@ export class AppComponent implements AfterViewInit {
   }
   
 }
+

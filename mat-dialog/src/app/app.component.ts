@@ -6,7 +6,7 @@ import { MatDialog, MatDialogConfig } from '@angular/material';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
   fromAppComponent = "Hello, I'm from the app component";
@@ -22,3 +22,4 @@ export class AppComponent {
     myDialog.afterClosed().subscribe(result => console.log('result: ', result));
   }
 }
+

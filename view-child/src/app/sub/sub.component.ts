@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-sub',
   templateUrl: './sub.component.html',
   styleUrls: ['./sub.component.css']
-})
+,  standalone: false})
 export class SubComponent implements OnInit {
 
   constructor() { }
@@ -17,3 +17,4 @@ export class SubComponent implements OnInit {
   }
 
 }
+

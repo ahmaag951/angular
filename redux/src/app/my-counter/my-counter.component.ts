@@ -7,7 +7,7 @@ import { decrement, increment, reset } from '../counter.actions';
   selector: 'app-my-counter',
   templateUrl: './my-counter.component.html',
   styleUrls: ['./my-counter.component.scss']
-})
+,  standalone: false})
 export class MyCounterComponent implements OnInit {
   // this is the url https://ngrx.io/guide/store
   count$: Observable<number>;
@@ -33,3 +33,4 @@ export class MyCounterComponent implements OnInit {
   }
 
 }
+

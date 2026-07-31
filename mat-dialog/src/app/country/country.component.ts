@@ -5,7 +5,7 @@ import { MAT_DIALOG_DATA } from '@angular/material';
   selector: 'app-country',
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.scss']
-})
+,  standalone: false})
 export class CountryComponent implements OnInit {
 
   constructor(
@@ -21,3 +21,4 @@ export class CountryComponent implements OnInit {
   }
 
 }
+

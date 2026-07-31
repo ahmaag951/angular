@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
 
@@ -12,3 +12,4 @@ export class AppComponent {
     console.log('resolved captcha response', captchaResponse);
   }
 }
+

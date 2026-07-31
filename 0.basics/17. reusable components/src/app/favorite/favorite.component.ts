@@ -6,7 +6,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./favorite.component.css'],
   // here is the second way
   // inputs: ['isFavorite'] // this will create field under the hood named with 'isFavorite'
-,
   standalone: false
 })
 export class FavoriteComponent {

@@ -5,11 +5,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   selector: 'app-stepper',
   templateUrl: './stepper.component.html',
   styleUrls: ['./stepper.component.css']
-})
+,  standalone: false})
 export class StepperComponent implements OnInit {
 
-  firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
+  firstFormGroup!: FormGroup;
+  secondFormGroup!: FormGroup;
 
   constructor(private _formBuilder: FormBuilder) { }
 
@@ -27,3 +27,4 @@ export class StepperComponent implements OnInit {
     
   }
 }
+

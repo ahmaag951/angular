@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-test-map',
   templateUrl: './test-map.component.html',
   styleUrls: ['./test-map.component.scss']
-})
+,  standalone: false})
 export class TestMapComponent implements OnInit {
 
   constructor() { }
@@ -13,3 +13,4 @@ export class TestMapComponent implements OnInit {
   }
 
 }
+

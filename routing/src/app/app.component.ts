@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'custom title';
 
@@ -33,4 +33,5 @@ export class AppComponent {
  active
   3. add links
 */
+
 

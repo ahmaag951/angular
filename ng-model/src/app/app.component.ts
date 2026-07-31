@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   form: FormGroup;
 
@@ -23,3 +23,4 @@ export class AppComponent {
     });
   }
 }
+

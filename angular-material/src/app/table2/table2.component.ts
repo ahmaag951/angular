@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 
 export interface Country {
   id: number;
@@ -21,7 +22,7 @@ const countries: Country[] = [
   selector: 'app-table2',
   templateUrl: './table2.component.html',
   styleUrls: ['./table2.component.css']
-})
+,  standalone: false})
 export class Table2Component implements OnInit {
 
   columnsToDisplay = ['id', 'name'];
@@ -29,7 +30,7 @@ export class Table2Component implements OnInit {
   Property decorator that configures a view query. The change detector looks for the first element or 
   the directive matching the selector in the view DOM. If the view DOM changes, and a new child matches the 
   selector, the property is updated. */
-  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+  @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
   dataSource = new MatTableDataSource<Country>(countries);
   constructor() { }
 
@@ -40,3 +41,4 @@ export class Table2Component implements OnInit {
 
 
 }
+

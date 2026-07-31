@@ -1,11 +1,11 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-my-dialog',
   templateUrl: './my-dialog.component.html',
   styleUrls: ['./my-dialog.component.css']
-})
+,  standalone: false})
 export class MyDialogComponent implements OnInit {
 
   // now we need to receive the sent data to this dialog
@@ -24,3 +24,4 @@ export class MyDialogComponent implements OnInit {
   }
 
 }
+

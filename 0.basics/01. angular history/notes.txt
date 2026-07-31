@@ -1,13 +1,43 @@
-2010 => angular js
-in mid 2016 => angular 2
-and upgrades happened to angular 2 => 2.0 - 2.1 - 2.2 - 2.3 - 4
-angular 4 was not a new framework with a lot of breaking changes 
-so what happened to version 3
-angular consists of a few different libraries that are distributed as separate node packages via npm like
-@angular/core => 2.3.0
-@angular/compiler => 2.3.0
-@angular/http => 2.3.0
-@angular/router => 3.3.0
-all these libraries were version the same except the router library
-so in order to align these versions and avoid confusion in the future angular team decided to go straight to angular version 4
-so angular 4 is not a major update for angular 2 and you can think of it as angular 2.4
+Hi Bhavya,
+
+Thank you for sharing the Job Description.
+
+Please find my experience confirmation below:
+
+| Requirement                                                     | Yes / No |
+| --------------------------------------------------------------- | -------- |
+| 5+ years of backend engineering experience                      | Yes      |
+| .NET Core / ASP.NET Core in production                          | Yes      |
+| .NET 8                                                          | Yes      |
+| ASP.NET Core Web APIs                                           | Yes      |
+| REST APIs                                                       | Yes      |
+| GraphQL                                                         | No       |
+| Microservices architecture                                      | Yes      |
+| Kafka (producers/consumers, consumer groups, offset management) | Yes      |
+| DDD & Clean Architecture                                        | Yes      |
+| EF Core                                                         | Yes      |
+| SQL Server                                                      | Yes      |
+| Query optimization, indexing, transactions, isolation levels    | Yes      |
+| Transactional Outbox/Inbox patterns                             | Yes      |
+| Distributed tracing & Correlation IDs                           | Yes      |
+| Ultimus BPM                                                     | No       |
+| Serilog                                                         | Yes      |
+| Elastic/Kibana                                                  | Yes      |
+| Automated Testing (Unit/Integration/Contract)                   | Yes      |
+| OWASP/security best practices                                   | Yes      |
+| Kubernetes (on-prem)                                            | Yes      |
+| Containers/Docker                                               | Yes      |
+| CI/CD (Azure DevOps/Git)                                        | Yes      |
+| SonarQube                                                       | Yes      |
+| Redis                                                           | Yes      |
+| Nginx                                                           | Yes      |
+| SignalR                                                         | Yes      |
+| CQRS                                                            | Yes      |
+| Event Sourcing                                                  | No       |
+
+I have extensive experience building and maintaining scalable .NET-based microservices, event-driven systems, REST APIs, SQL Server applications, and cloud/on-prem containerized deployments. I would be happy to discuss my relevant experience in more detail.
+
+Please let me know if you need any additional information.
+
+Regards,
+Ahmed Ezzat

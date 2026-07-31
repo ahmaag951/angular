@@ -6,7 +6,7 @@ import { RxwebValidators } from '@rxweb/reactive-form-validators';
   selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
-})
+,  standalone: false})
 export class TestComponent implements OnInit {
   form: FormGroup;
 
@@ -38,3 +38,4 @@ export class TestComponent implements OnInit {
   }
 
 }
+

@@ -7,7 +7,7 @@ import { map, switchMap } from 'rxjs/operators';
   selector: 'courses',
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.css']
-})
+,  standalone: false})
 export class CoursesComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
@@ -96,3 +96,4 @@ export class CoursesComponent implements OnInit {
     });
   }
 }
+

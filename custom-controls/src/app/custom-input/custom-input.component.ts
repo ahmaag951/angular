@@ -13,7 +13,7 @@ ControlValueAccessor is an INTERFACE that acts as a bridge between the Angular f
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => CustomInputComponent),
       multi: true
-    }
+    ,  standalone: false}
   ]
 })
 export class CustomInputComponent implements OnInit {
@@ -49,3 +49,4 @@ export class CustomInputComponent implements OnInit {
   }
 
 }
+

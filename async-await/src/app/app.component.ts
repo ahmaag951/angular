@@ -7,7 +7,7 @@ import 'rxjs/add/operator/toPromise';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent implements OnInit {
   constructor() {
     // https://itnext.io/javascript-promises-vs-rxjs-observables-de5309583ca2#targetText=Or%20that%20a%20promise%20is,at%20it%20in%20more%20detail.
@@ -162,3 +162,4 @@ export class AppComponent implements OnInit {
   title = 'hello-world';
   list: string[];
 }
+

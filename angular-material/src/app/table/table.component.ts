@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { MatTableModule } from '@angular/material/table';
+import { CommonModule } from '@angular/common';
 
 export interface Country {
   id: number;
@@ -29,7 +31,9 @@ const countries: Country[] = [
       state('expanded', style({height: '*'})),
       transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
     ]),
-  ]
+  ],
+  standalone: true,
+  imports: [CommonModule, MatTableModule]
 })
 export class TableComponent implements OnInit {
 
@@ -39,7 +43,8 @@ export class TableComponent implements OnInit {
   }
   displayedColumns: string[] = ['id', 'name'];
   dataSource = countries;
-  expandedElement: Country | null;
+  expandedElement: Country | null = null;
 }
+
 
 

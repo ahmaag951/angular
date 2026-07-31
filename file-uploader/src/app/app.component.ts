@@ -6,7 +6,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
   form: FormGroup;
@@ -38,3 +38,4 @@ export class AppComponent {
 
   }
 }
+

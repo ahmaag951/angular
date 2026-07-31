@@ -7,7 +7,7 @@ import { catchError, map, tap } from 'rxjs/operators';
   selector: 'countries',
   templateUrl: './countries.component.html',
   styleUrls: ['./countries.component.css']
-})
+,  standalone: false})
 export class CountriesComponent implements OnInit {
   countries: country[];
   countryNameInput;
@@ -71,3 +71,4 @@ interface country {
   CountryName: string;
   CountryLanguage: string;
 }
+

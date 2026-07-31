@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   title = environment.myCustomtitle;
 /*
@@ -33,3 +33,4 @@ export class AppComponent {
   but using ngx-envconfig you can do that without need to a new build.
 */
 }
+

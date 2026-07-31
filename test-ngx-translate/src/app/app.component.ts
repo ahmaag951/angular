@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'hello-world from me 2';
 
@@ -20,3 +20,4 @@ export class AppComponent {
     this.translate.use(language);
 }
 }
+

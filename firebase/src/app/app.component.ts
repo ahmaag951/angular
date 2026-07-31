@@ -6,7 +6,7 @@ import { Firestore, collectionData, collection } from '@angular/fire/firestore';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent {
   courses$: Observable<any>;
   dbPath = '/Courses/';
@@ -60,3 +60,4 @@ export class AppComponent {
   // to solve this unsubscribe to that list on OnDestroy, or use the async pipe
 
 }
+

@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-countries',
   templateUrl: './countries.component.html',
   styleUrls: ['./countries.component.scss']
-})
+,  standalone: false})
 export class CountriesComponent implements OnInit {
 
   constructor() { }
@@ -13,3 +13,4 @@ export class CountriesComponent implements OnInit {
   }
 
 }
+

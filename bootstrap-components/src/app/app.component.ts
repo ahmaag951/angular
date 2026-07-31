@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
   /*
@@ -14,3 +14,4 @@ export class AppComponent {
   or import it in styles.scss => @import "~bootstrap/dist/css/bootstrap.css"
   */
 }
+

@@ -5,7 +5,7 @@ import * as $ from 'jquery';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent implements AfterViewInit {
   title = 'hello-world';
   // this is the link https://stackoverflow.com/a/40355691/1858417
@@ -26,3 +26,4 @@ export class AppComponent implements AfterViewInit {
   }
 
 }
+

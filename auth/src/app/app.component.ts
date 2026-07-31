@@ -5,7 +5,7 @@ import { AuthService } from './auth/auth.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
 
@@ -21,3 +21,4 @@ export class AppComponent {
     this.authService.logout();
   }
 }
+

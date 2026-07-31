@@ -7,7 +7,7 @@ import {map, startWith} from 'rxjs/operators';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent implements OnInit {
   myControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
@@ -27,3 +27,4 @@ export class AppComponent implements OnInit {
     return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 }
+

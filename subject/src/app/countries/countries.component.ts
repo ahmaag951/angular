@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs';
   selector: 'countries',
   templateUrl: './countries.component.html',
   styleUrls: ['./countries.component.css']
-})
+,  standalone: false})
 export class CountriesComponent implements OnDestroy {
   title = 'hello-world';
   countries: any[] = [];
@@ -28,3 +28,4 @@ export class CountriesComponent implements OnDestroy {
 
 
 }
+

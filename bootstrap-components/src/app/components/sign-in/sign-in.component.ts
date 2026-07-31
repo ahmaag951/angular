@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.scss']
-})
+,  standalone: false})
 export class SignInComponent implements OnInit {
 
   constructor() { }
@@ -13,3 +13,4 @@ export class SignInComponent implements OnInit {
   }
 
 }
+

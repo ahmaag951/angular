@@ -5,7 +5,7 @@ import { ConfigService } from 'ngx-envconfig';
   selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.scss']
-})
+,  standalone: false})
 export class TestComponent implements OnInit {
 
   
@@ -18,3 +18,4 @@ export class TestComponent implements OnInit {
   }
 
 }
+

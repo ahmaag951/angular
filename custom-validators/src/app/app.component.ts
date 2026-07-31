@@ -5,7 +5,7 @@ import { AbstractControl, FormGroup, FormBuilder, Validators } from '@angular/fo
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+,  standalone: false})
 export class AppComponent {
   title = 'hello-world';
   form: FormGroup;
@@ -73,3 +73,4 @@ export const minLengthValidator = (min: number) => {
     return null;
   };
 };
+

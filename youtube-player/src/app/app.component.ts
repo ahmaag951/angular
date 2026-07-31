@@ -5,7 +5,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
+,  standalone: false})
 export class AppComponent {
   // the old way
   videoUrl = 'https://www.youtube.com/embed/OXgF9GeoX8o';
@@ -17,3 +17,4 @@ export class AppComponent {
 
   // the new way is to install @angular/youtube-player
 }
+

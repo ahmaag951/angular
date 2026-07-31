@@ -4,7 +4,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
   selector: 'app-country',
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.css']
-})
+,  standalone: false})
 export class CountryComponent implements OnChanges, OnInit {
   @Input() name;
 
@@ -46,3 +46,4 @@ export class CountryComponent implements OnChanges, OnInit {
   }
 
 }
+
