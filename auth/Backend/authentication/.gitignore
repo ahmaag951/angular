@@ -1,0 +1,28 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+## Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+## NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+packages/
+!**/[Pp]ackages/build/
+
+## Logs
+*.log
+
+## OS
+Thumbs.db
+.DS_Store
