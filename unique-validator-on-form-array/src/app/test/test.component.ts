@@ -24,7 +24,7 @@ export class TestComponent implements OnInit {
   }
 
   addSkill() {
-    let skillsArray = <FormArray>this.form.controls.skills;
+    let skillsArray = <FormArray>this.form.controls['skills'];
     skillsArray.push(this.getSkillFormGroup());
   }
 

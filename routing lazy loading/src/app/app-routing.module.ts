@@ -5,8 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   // { path: 'test', component: AppComponent },
 
-  { path: 'lookups', loadChildren: '../app/lookups/lookups.module#LookupsModule' },
-  { path: 'test', loadChildren: '../app/test/test.module#TestModule' }
+  { path: 'lookups', loadChildren: () => import('./lookups/lookups.module').then(m => m.LookupsModule) },
+  { path: 'test', loadChildren: () => import('./test/test.module').then(m => m.TestModule) }
 ];
 
 @NgModule({

@@ -38,6 +38,6 @@ export class AppComponent {
 }
 
 export class Country {
-  id: number;
-  name: string;
+  id!: number;
+  name!: string;
 }

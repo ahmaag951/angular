@@ -14,7 +14,7 @@ export class AppComponent {
 
   }
 
-  addCountry(country) {
+  addCountry(country: any) {
     this.service.sendCountry(country);
   }
 }

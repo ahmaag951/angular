@@ -32,7 +32,6 @@
                                                                                          "scripts":  [
 
                                                                                                      ],
-                                                                                         "es5BrowserSupport":  true,
                                                                                          "browser":  "src/main.ts"
                                                                                      },
                                                                          "configurations":  {

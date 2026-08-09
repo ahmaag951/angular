@@ -12,7 +12,7 @@ export class StorageService {
   }
 
   getItem(key: string): any {
-    return JSON.parse(localStorage.getItem(key));
+    return JSON.parse(localStorage.getItem(key) as string);
   }
 
 }

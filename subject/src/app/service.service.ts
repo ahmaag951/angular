@@ -9,7 +9,7 @@ export class ServiceService {
 
   constructor() { }
 
-  sendCountry(country) {
+  sendCountry(country: any) {
     this.subject.next({ country: country });
   }
 

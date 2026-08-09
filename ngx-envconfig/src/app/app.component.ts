@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ConfigService } from 'ngx-envconfig';
+import { ConfigService } from './config.service';
 
 @Component({
   selector: 'app-root',

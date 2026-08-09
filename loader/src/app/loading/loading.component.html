@@ -1,1 +1,11 @@
-<div *ngIf="isLoading | async">Loading...</div>
+<div class="loader-overlay" *ngIf="isLoading | async">
+  <div class="loader-card">
+    <div class="spinner">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+      <div class="dot"></div>
+    </div>
+    <p class="loader-text">Loading<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+  </div>
+</div>

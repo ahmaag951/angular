@@ -10,7 +10,7 @@ export class AppComponent implements AfterViewInit {
   title = 'hello-world';
 
   // @ViewChild(SubComponent) sub: SubComponent;
-  @ViewChild('firstid') sub: SubComponent;
+  @ViewChild('firstid') sub!: SubComponent;
 
 
   ngAfterViewInit() {

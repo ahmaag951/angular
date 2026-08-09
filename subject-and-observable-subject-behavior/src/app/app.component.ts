@@ -3,7 +3,7 @@ import { Observable, Subject, BehaviorSubject, of } from 'rxjs';
 
 // https://medium.com/@luukgruijs/understanding-rxjs-subjects-339428a1815b
 
-const myObservable = Observable.create((observer) => {
+const myObservable = Observable.create((observer: any) => {
   // this is an observable that return random number to its subscribers
   // every time the value of the random number will be different
   observer.next(Math.random());
@@ -37,11 +37,11 @@ export class AppComponent implements OnInit {
   */
 
   start() {
-    myObservable.subscribe((data) => {
+    myObservable.subscribe((data: any) => {
       console.log('Observable subscriber1 ', data);
     });
 
-    myObservable.subscribe((data) => {
+    myObservable.subscribe((data: any) => {
       console.log('Observable subscriber2 ', data);
     });
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigService } from 'ngx-envconfig';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-test',
@@ -10,7 +10,7 @@ export class TestComponent implements OnInit {
 
   
   constructor(private config: ConfigService){
-    console.log(config.get('host'));
+    console.log("This is a log from the console" + config.get('host'));
     
   }
 

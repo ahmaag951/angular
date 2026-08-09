@@ -5,9 +5,9 @@ import { map, take } from 'rxjs/operators';
 const simpleObservable = new Observable(observer => {
 
   // observable execution
-  observer.next("bla bla bla")
-  observer.next("bla 22")
-  observer.next("bla 33")
+  observer.next("first")
+  observer.next("second")
+  observer.next("third")
   observer.complete();
 });
 

@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'no-strict';
 
   constructor() {
-    const a: number = 6;
+    const a: number = 0;
 
     switch (a) {
       case 0:

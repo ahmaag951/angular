@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'hello-world from me 2';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('ar');
+    translate.use('ar');
 
     translate.get('demo.fromts').subscribe((text:string) => {console.log(text)});
   }
